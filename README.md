@@ -1,3 +1,2 @@
 # kikowolf.github.io
-
-## En esta web encontraras recursos utiles que voy subiendo
+En esta web encontrarás recursos utiles que voy subiendo
