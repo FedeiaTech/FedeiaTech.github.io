@@ -1,0 +1,13 @@
+body {
+	background-color: #EEEEEE;
+}
+
+#img {
+	display:block;
+	margin:auto;
+	width: 180px;
+}
+
+p {
+	font-size: 18px;
+}
