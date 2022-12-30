@@ -1,7 +1,13 @@
 body {
-	background-color: #EEEEEE;
+	background: linear-gradient(to bottom, #bfbfbf, white, #bfbfbf);
+	font-family: verdana, times;
 	}
 
+p {
+	font-size: 18px;
+}
+
 a {
+	color: #303030;
 	font-size: 18px;
 	}
