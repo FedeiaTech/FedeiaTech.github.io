@@ -1,9 +1,16 @@
 body {
-	background: linear-gradient(to bottom, #cfcfcf, white);
+	background: linear-gradient(to bottom, #bfbfbf, white, #bfbfbf);
+	font-family: verdana, times;
+}
+
+a{
+	color: #303030;
+	font-weight: bold;
 }
 
 p {
 	font-size: 18px;
+	font-family: monospace, verdana, times;
 }
 
 h3 {
@@ -27,6 +34,8 @@ h3 {
 }
 
 .container {
+	background-color: hsl(0, 0%, 85%);
+	opacity: 1;
 	border: 2px dotted gray;
 	border-radius: 12px;
 	flex-basis: 150px;
