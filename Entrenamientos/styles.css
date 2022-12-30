@@ -3,9 +3,14 @@ body {
 }
 
 #img {
-	display:block;
-	margin:auto;
+	display: block;
+	margin: auto;
 	width: 180px;
+}
+
+#imagen {
+	display: none;
+	width: auto;
 }
 
 p {
