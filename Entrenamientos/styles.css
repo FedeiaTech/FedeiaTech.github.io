@@ -8,7 +8,7 @@ body {
 	width: 180px;
 }
 
-#imagen {
+.modal {
 	display: none;
 	width: auto;
 }
