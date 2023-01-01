@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(to bottom, #bfbfbf, white, #bfbfbf);
+	background: linear-gradient(to bottom, #ada2fc, white, #ada2fc);
 	font-family: verdana, times;
 }
 
@@ -18,7 +18,12 @@ h3 {
 }
 
 .linked {
+	/*border: solid;*/
+	margin-left: 13px;
+	display: flex;
+	align-items: center;
 	text-align: center;
+	font-size: 14px;
 }
 
 .img {
@@ -33,9 +38,27 @@ h3 {
 }
 
 .container {
-	background-color: hsl(0, 0%, 85%);
+	display: flex;
+	background-color: #ada2fc;
 	opacity: 1;
-	border: 2px dotted gray;
+	border: 2px solid #ada2fc;
+	border-radius: 12px;
+	flex-basis: 150px;
+}
+
+.container2 {
+	display: flex;
+	background-color: none;
+	opacity: 1;
+	border: 1px dashed #000000;
+	border-radius: 12px;
+	flex-basis: 150px;
+}
+
+.container3 {
+	background-color: #ada2fc;
+	opacity: 1;
+	border: 2px solid #ada2fc;
 	border-radius: 12px;
 	flex-basis: 150px;
 }
