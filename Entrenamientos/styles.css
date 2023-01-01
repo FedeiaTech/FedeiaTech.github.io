@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(to bottom, #ada2fc, white, #ada2fc);
+	background: linear-gradient(to bottom, #a2b9fc, white, #a2b9fc);
 	font-family: verdana, times;
 }
 
@@ -20,6 +20,7 @@ h3 {
 .linked {
 	/*border: solid;*/
 	margin-left: 13px;
+	margin-right: 13px;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -39,9 +40,9 @@ h3 {
 
 .container {
 	display: flex;
-	background-color: #ada2fc;
+	background-color: #a2b9fc;
 	opacity: 1;
-	border: 2px solid #ada2fc;
+	border: 2px solid #a2b9fc;
 	border-radius: 12px;
 	flex-basis: 150px;
 }
@@ -50,7 +51,7 @@ h3 {
 	display: flex;
 	background-color: none;
 	opacity: 1;
-	border: 1px dashed #000000;
+	border: 2px dashed #dfdfdf;
 	border-radius: 12px;
 	flex-basis: 150px;
 }
