@@ -7,7 +7,24 @@ html, body { height: 100%; }
 
 h1, h2 { margin-bottom: 20px; }
 
+h1 { font-size: 26px !important;
+ }
 h2 { font-size: 24px; }
+
+p { font-size: 100%;
+	line-height: 2; 
+	}
+
+img {
+	aspect-ratio: 
+}
+
+.checklist {
+	font-size: 100%;
+	line-height: 2;
+	text-align: justify;
+}
+
 .templatemo-container {
 	display: table;
 	width: 100%;
@@ -71,7 +88,7 @@ h2 { font-size: 24px; }
 	border-bottom: 1px solid gray;
 	border-left: 1px solid gray;
 	float: right;
-	padding: 20px 30px 20px 100px;
+	padding: 20px 3vw 20px 50px;
 	text-align: right;
 }
 .logo-right {
@@ -80,7 +97,7 @@ h2 { font-size: 24px; }
 	border-bottom: 1px solid gray;
 	border-left: none;
 	float: left;
-	padding: 20px 100px 20px 500px;
+	padding: 20px 5vw 20px 25vw; /*titulo*/
 }
 
 .templatemo-nav {
@@ -106,7 +123,7 @@ h2 { font-size: 24px; }
 .templatemo-nav>li>a>.fa { margin-right: 10px; }
 .templatemo-header {
 	clear: both;
-	font-size: 30px;
+	font-size: 20px;
 	margin-top: 0;
 }
 article { margin-top: 40px; }
