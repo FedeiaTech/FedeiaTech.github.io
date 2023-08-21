@@ -8123,8 +8123,9 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
+/* Opacidad nav-bar */
 .bg-secondary {
-  --bs-bg-opacity: 1;
+  --bs-bg-opacity: 0.7;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
 
