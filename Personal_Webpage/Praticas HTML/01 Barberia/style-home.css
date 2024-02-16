@@ -1,0 +1,85 @@
+body {
+  background-color: #bebebe;
+}
+
+header {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #880c46;
+  font-family: monospace;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#imagen {
+  width: 100%;
+}
+
+.tit-centralizado {
+  text-align: center;
+  font-size: 25px;
+  font-family: monospace;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+em strong {
+  color: red;
+} /* selecciona las dos etiquetas que trabajan juntas, la padre e hijo*/
+
+#mision {
+  font-size: 20px;
+}
+
+.items {
+  font-style: italic;
+}
+
+ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+.principal {
+  background: #bebebe;
+  padding: 20px;
+}
+
+.diferenciales {
+  background: pink;
+  padding: 30px;
+}
+
+.imgdiferenciales {
+  width: 50%;
+}
+
+/*-----------------------------*/
+footer {
+  text-align: center;
+  background: url(Imagenes/imagenes/bg.jpg);
+  padding: 40px;
+}
+
+.copyright {
+  color: pink;
+  font-size: 13px;
+}
+
+#logo-pink {
+  width: 10%;
+}

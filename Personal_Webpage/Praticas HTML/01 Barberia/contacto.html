@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=Z, initial-scale=1.0" />
+    <title>Contacto - Baberia Alura</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Barbería Penélope</h1>
+      <div class="caja">
+        <div>
+          <img id="logo" src="Imagenes/imagenes/logo.png" alt="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--seccion del formulario-->
+      <form>
+        <!-- Cuando colocamos una caja "input" le asignamos una propiedad 'id' para el texto de la etiqueta "label", y a esta ultima etiqueta le asignamos la propiedad 'for' con el mismo id para asociarlos-->
+        <label for="nombreyapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreyapellido" class="input-padron" required />
+
+        <label for="email">Correo electronico</label>
+        <input
+          type="email"
+          id="email"
+          class="input-padron"
+          required
+          placeholder="email@dominio.com"
+        />
+
+        <label for="telefono">Telefono</label>
+        <input
+          type="tel"
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="(342) xxxx xxx"
+        />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          name=""
+          id="mensaje"
+          cols="70"
+          rows="10"
+          class="input-padron"
+          required
+          placeholder="Escribe tu mensaje"
+        ></textarea>
+
+        <fieldset>
+          <!--los elementos de este grupo estan relacionados-->
+          <legend class="test" id="test">
+            ¿Como le gustaria que lo contactemos?
+          </legend>
+          <!--es buena practica semantica utilizar 'legend' dentro del fieldset en lugar de 'p'-->
+
+          <label for="radio-email"
+            ><input
+              type="radio"
+              value="email"
+              name="contacto"
+              id="radio-email"
+            />Email</label
+          >
+          <!-- For: Para asociar con el input-->
+          <!-- Radio: Para indicar que es una seleccion
+          value: valor enviado
+          name: Para agrupar a todos los radio
+          id: para asociar con el 'label'-->
+
+          <label for="radio-telefono"
+            ><input
+              type="radio"
+              value="telefono"
+              name="contacto"
+              id="radio-telefono"
+            />Telefono</label
+          >
+
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              value="whatsapp"
+              name="contacto"
+              id="radio-whatsapp"
+              checked
+            />WhatsApp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>¿En que horario quiere ser atendido?</legend>
+          <select name="" id="">
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+          </select>
+        </fieldset>
+
+        <label
+          ><input type="checkbox" checked />¿Le gustaria recibir novedades de la
+          Barberia Penelope?</label
+        >
+        <!--type checkbox: de seleccion 'check'-->
+
+        <input type="submit" value="Enviar consulta" class="enviar" />
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horarios</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td>Lunes</td>
+          <td>08 - 20 hs</td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td>08 - 20 hs</td>
+        </tr>
+        <tr>
+          <td>Miercoles</td>
+          <td>08 - 20 hs</td>
+        </tr>
+        <tr>
+          <td>Jueves</td>
+          <td>08 - 20 hs</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>08 - 20 hs</td>
+        </tr>
+        </tbody>
+        
+      </table>
+    </main>
+    <footer>
+      <div>
+        <img
+          id="logo-pink"
+          src="Imagenes/imagenes/logo-pink.png"
+          alt="logo rosa"
+        />
+        <p class="copyright">
+          &copy Copyright Barberia Penelope - Federico Iacono 2024
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

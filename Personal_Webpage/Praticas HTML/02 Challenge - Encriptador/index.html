@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecriptador - Challenge ONE</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        <h1>Des/encriptador de mensajes</h1>
+    </header>
+    <main>
+      <section class="container">
+        
+        <section class="box1">
+          <form action="">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="text" id="mensaje" cols="20" placeholder="Ingrese aqui su texto" rows="30"></textarea>
+
+            <p id="info">&#128712; Ingrese solo texto en minusculas y sin acentos</p>
+
+            <input type="button" value="Encriptar" class="encriptar" onclick="encriptar()"/>
+
+            <input type="button" value="Desencriptar" class="desencriptar" onclick="desencriptar()"/>
+
+            <input type="button" value="&#128203; Copiar texto" class="copy" onclick="copiarTexto()"/>
+
+            <input type="button" value="Borrar texto" class="clear" onclick="borrarTexto()"/>
+          </form>
+        </section>
+
+        <section class="box2">
+          <table>
+            <thead>
+              <tr>
+                <th>Resultado:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="resultado">Ningun mensaje fue encontrado.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+    <footer>
+        <div class="logo">
+            <img src="./Imagenes/Logo-1.png" alt="logo de Alura" />
+          </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
