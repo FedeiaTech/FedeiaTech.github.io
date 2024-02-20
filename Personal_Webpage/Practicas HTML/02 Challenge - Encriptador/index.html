@@ -3,31 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ecriptador - Challenge ONE</title>
+    <title>Encriptador / Desencriptador</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-        <h1>Des/encriptador de mensajes</h1>
+      <h1>Encriptador de mensajes</h1>
     </header>
     <main>
+      <section class="instrucciones">
+        <h2>Sobre el encriptador:</h2>
+        <p>
+          Cualquier palabra colocada será encriptada utilizando nuestro metodo
+          personal<br />
+          Instrucciones:<br />
+          Ingrese la frase a encriptar o desencriptar y luego presione el botón
+          segun requiera. Una <strong> frase resultado</strong> aparecerá
+          a su derecha.<br />
+          Copiar texto: copia al portapapeles su
+          <strong>frase resultado</strong>.<br />
+          Borrar texto: elimina el contenido de ambos campos de texto.
+        </p>
+      </section>
       <section class="container">
-        
         <section class="box1">
           <form action="">
             <label for="mensaje">Mensaje:</label>
-            <textarea name="text" id="mensaje" cols="20" placeholder="Ingrese aqui su texto" rows="30"></textarea>
+            <textarea
+              name="text"
+              id="mensaje"
+              cols="20"
+              placeholder="Ingrese aquí su texto"
+              rows="30"
+            ></textarea>
 
-            <p id="info">&#128712; Ingrese solo texto en minusculas y sin acentos</p>
+            <p id="info">
+             Ingrese solo texto en minúsculas y sin acentos
+            </p>
 
-            <input type="button" value="Encriptar" class="encriptar" onclick="encriptar()"/>
+            <input
+              type="button"
+              value="Encriptar"
+              class="encriptar"
+              onclick="encriptar()"
+            />
 
-            <input type="button" value="Desencriptar" class="desencriptar" onclick="desencriptar()"/>
+            <input
+              type="button"
+              value="Desencriptar"
+              class="desencriptar"
+              onclick="desencriptar()"
+            />
 
-            <input type="button" value="&#128203; Copiar texto" class="copy" onclick="copiarTexto()"/>
+            <input
+              type="button"
+              value="&#128203; Copiar texto"
+              class="copy"
+              onclick="copiarTexto()"
+            />
 
-            <input type="button" value="Borrar texto" class="clear" onclick="borrarTexto()"/>
+            <input
+              type="button"
+              value="Borrar texto"
+              class="clear"
+              onclick="borrarTexto()"
+            />
           </form>
         </section>
 
@@ -40,7 +87,7 @@
             </thead>
             <tbody>
               <tr>
-                <td id="resultado">Ningun mensaje fue encontrado.</td>
+                <td id="resultado">Ningún mensaje fue encontrado.</td>
               </tr>
             </tbody>
           </table>
@@ -48,9 +95,13 @@
       </section>
     </main>
     <footer>
-        <div class="logo">
-            <img src="./Imagenes/Logo-1.png" alt="logo de Alura" />
-          </div>
+      <div class="logo">
+        <img src="./Imagenes/Logo-1.png" alt="logo de Alura" />
+        <p class="copyright">
+          Challenge for ONE - Alura | &copy Copyright Encriptador - Federico
+          Iacono 2024
+        </p>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>
