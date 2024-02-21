@@ -1,170 +1,110 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Página principal Fede Iacono</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-		<!-- Header -->
-			<header id="header" style="color: gray;">
-				<h1>Fede Iacono - Web</h1>
-				<nav>
-					<ul>
-						<li><a href="#intro">Intro</a></li>
-						<li><a href="#one">Lo que hago</a></li>
-						<li><a href="#two">Quién soy</a></li>
-						<li><a href="#work">Secciones</a></li>
-						<li><a href="#contact">Contacto</a></li>
-					</ul>
-				</nav>
-			</header>
-
-		<!-- Intro -->
-			<section id="intro" class="main style1 dark fullscreen">
-				<div class="content">
-					<header>
-						<h2>#Hola usted!</h2>
-					</header>
-					<p>Bienvenido/a a mi hogar, me llamo <strong>Fede</strong> y soy <strong>Diseñador y Programador Web</strong>.<br> >>> Este es un sitio web responsivo en el que <br> expongo algunos de mis proyectos desarrollados en <a href="https://github.com/Kikowolf">GitHub.</a><br>
-					...<<< <br>
-					</p>
-					<footer>
-						<a href="#one" class="button style2 down">Más</a>
-					</footer>
-				</div>
-			</section>
-
-		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
-				<div class="content box style2" style="background-color: black; color: #dfdfdf;">
-					<header>
-						<h2>Especialidad</h2>
-					</header>
-					<p>Actualmente me especializo en desarrollar <strong>Sitios Web</strong> de características minimalistas e intuitivas.<br>
-					La observación y apuntes son algunos de mis fuertes que puedes ver en la sección <a href="https://kikowolf.github.io/Programando/index.html" style="font-size: 25px">Programando</a>.</p>
-				</div>
-				<a href="#two" class="button style2 down anchored">Siguiente</a>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="main style2 left dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>Quién soy</h2>
-					</header>
-					<p>Estudiante de programación, practicante de desarrollo web y aspirante <strong>FullStack</strong>.<br>
-					Mi otro pasatiempo es el <strong>entrenamiento físico</strong>, y podés ver una de mis primeras páginas desarrolladas en HTML con un <a href="https://kikowolf.github.io/Entrenamientos/Entrenamiento2d.html" style="font-size: 25px">plan de entrenamiento</a> incluído.</p>
-				</div>
-				<a href="#work" class="button style2 down anchored">Siguiente</a>
-			</section>
-
-		<!-- Work -->
-			<section id="work" class="main style3 primary">
-				<div class="content">
-					<header style="color: #dfdfdf;">
-						<h2>Secciones</h2>
-						<p>Algunos de mis trabajos</p>
-					</header>
-
-					<!-- Gallery  -->
-						<div class="gallery2" style="display: flex; align-content: center; align-items: center;margin-left: 10px; /*border: solid 2px #303030; border-bottom-width: 1px !important*/">
-							<article class="from-left" style="margin-left: -5vw;">
-								<a  href="http://kikowolf.github.io/Programando/index.html" class="image fit"><img src="images/thumbs/01.jpg" style="border-radius: 10% 10% 10% 10%; opacity: 0.6; width: 40vw;" title="Distortion" alt="Glitch con mi cara" /></a>
-							</article>
-							<article class="from-left" style="width: 440px; max-width: 440px;height: 2vh; line-height: 10px;">
-								<a style="font-size: 3.5vw;  text-decoration: none; color: #303030;" href="http://kikowolf.github.io/Programando/index.html"> <strong>PROGRAMANDO</strong></a>
-							</article>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="box">
+            <div class="box1">
+              <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+              </ul>
+              <div class="menu-icon">&#9776;</div>
             </div>
-            <br>
-            <div class="gallery2" style="display: flex; align-content: center; align-items: center; margin-left: -5vw;   /*border: solid 2px #303030; border-top-width: 1px*/">
-							<article class="from-left" style="width: 440px; max-width: 440px;height: 276px; line-height: 270px; margin-right: 1.6vw;">
-								<a style="font-size: 2.7vw; width: 440px;max-width: 440px; text-decoration: none; color: #303030;" href="http://kikowolf.github.io/Entrenamientos/Entrenamiento2d.html"><strong>ENTRENAMIENTO</strong></a>
-							</article>
-							<article class="from-right" >
-								<a style="margin-left: 10px; align-content: right" href="http://kikowolf.github.io/Entrenamientos/Entrenamiento2d.html" class="image fit"><img src="images/thumbs/4a.jpg" style="border-radius: 10% 10% 10% 10%; opacity: 0.9; width: 40vw;" title="Flexiones power" alt="Yo haciendo pullups"  /></a>
-							</article>
-						</div>
-						<br>
+            <div class="box2">
+              <button id="dark-mode-button">
+                <img id="eye" src="./assets/eye.gif" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-           <div class="gallery">
-              <article class="from-left" style="display: flex; margin-left: -10vw">
-								<a href="images/fulls/lobos.jpg" style="" class="image fit"><img src="images/thumbs/5.jpg" style="border-radius: 10% 10% 10% 10%; opacity: 0.8; width: 40vw" title="Fuerza interior" alt="Dibujo de lobo liberando poderes" /></a>
-							</article>
-							<br>
-							<br>
+    <main>
+      <section id="inicio">
+        <h1>Bienvenido a mi Portfolio</h1>
+        <p>
+          ¡Hola! Soy Fede Iacono, y aquí puedes ver algunos de mis proyectos.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates inventore corrupti dolorum debitis fugit esse quas delectus a molestiae 
+            suscipit voluptatibus saepe ut veritatis accusamus eum, doloremque, alias consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates inventore corrupti dolorum debitis fugit esse quas delectus a molestiae 
+            suscipit voluptatibus saepe ut veritatis accusamus eum, doloremque, alias consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates inventore corrupti dolorum debitis fugit esse quas delectus a molestiae 
+            suscipit voluptatibus saepe ut veritatis accusamus eum, doloremque, alias consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates inventore corrupti dolorum debitis fugit esse quas delectus a molestiae 
+            suscipit voluptatibus saepe ut veritatis accusamus eum, doloremque, alias consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptates inventore corrupti dolorum debitis fugit esse quas delectus a molestiae 
+            suscipit voluptatibus saepe ut veritatis accusamus eum, doloremque, alias consequuntur!
 
-						</div>
-						<div class="gallery">
-							<article class="from-right" style="margin-left: 30vw; margin-top: 3vh">
-								<a href="images/fulls/dog.jpg" class="image fit"><img src="images/thumbs/6.jpg" style="border-radius: 10% 10% 10% 10%; opacity: 0.9; width: 40vw; margin-top: 0;" title="Mi clan" alt="Hermoso perro rural" /></a>
-							</article>
+        </p>
+      </section>
 
-							<!--  
-						  <article class="from-right">
-                <a href="images/fulls/lobos.jpg" class="image fit"><img src="images/thumbs/5.jpg" title="Fuerza interior" alt="Dibujo de lobo liberando poderes" /></a>
-              </article>
-              <article class="from-right">
-                <a href="images/fulls/animal-flow.png" class="image fit"><img src="images/thumbs/6.jpg" title="Playa activa" alt="Yo en la playa. Tarde de animal flow" /></a>
-              </article>
-            </div> -->
-				</div>
-			</section>
-			<hr>
-		<!-- Contact -->
-			<section id="contact" class="main style3 secondary">
-				<div id="formulario" class="content">
-					<header style="margin-top: -5vh;">
-						<h2>Contacto</h2>
-						<p>Te invito a contarme tu idea, cualquier sugerencia o pedido, a la brevedad me estaré comunicando.</p>
-					</header>
-					<div  class="box">
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half"><input type="text" name="name" placeholder="Nombre" /></div>
-								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-								<div class="field"><textarea name="message" placeholder="Mensaje" rows="6"></textarea></div>
-							</div>
-							<ul class="actions special">
-								<li><input type="submit" value="Enviar mensaje" /></li>
-							</ul>
-						</form>
-					</div>
-				</div>
-			</section>
+      <div class="css-4spr8z"></div>
 
-		<!-- Footer -->
-			<footer id="footer">
+      <section id="proyectos" class="window">
+        <div class="window-title">
+            <div class="t-window">
+                <h2>Mis Proyectos</h2>
+            </div>
+            <div class="b-window">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false" class="chakra-icon css-9g9lgg" alt="Minimize" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M368.5 240h-225c-8.8 0-16 7.2-16 16 0 4.4 1.8 8.4 4.7 11.3 2.9 2.9 6.9 4.7 11.3 4.7h225c8.8 0 16-7.2 16-16s-7.2-16-16-16z"></path></svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon css-9g9lgg" alt="window" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 8H4v8h16v-8zm0-2V5H4v4h16zm-5-3h4v2h-4V6z"></path></g></svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false" class="chakra-icon css-9g9lgg" alt="Close" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z"></path></svg>
+            </div> 
+        </div>
+        <div class="window-content">
+        <table>
+          <tr>
+            <th>Proyecto</th>
+            <th>Descripción</th>
+          </tr>
+          <tr>
+            <td><a href="./portfolio_01/portfolio_btstrp.html">Web de imágenes generativas</a></td>
+            <td>Pagina con uso de Bootstrap</td>
+          </tr>
+          <tr>
+            <td><a href="./Javascript/javascript_index.html">Javascript</a></td>
+            <td>Seccion de practicas de Javascript</td>
+          </tr>
+          <tr>
+            <td><a href="./Practicas HTML/01 Barberia/index.html">Practicas 1</a></td>
+            <td>Barberia Penelope</td>
+          </tr>
+          <tr>
+            <td><a href="./Practicas HTML/02 Challenge - Encriptador/index.html">Practicas 2</a></td>
+            <td>Challenge 1 de Alura - Encriptador</td>
+          </tr>
+        </table>
+        </div>
+      </section>
 
-				<!-- Icons -->
-					<ul class="icons">
-						<li><a href="https://twitter.com/fedelbt" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://github.com/kikowolf" class="icon brands fa-git"><span class="label">Git</span></a></li>
-						<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-						<!-- <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
-						<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-						<!-- <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li> -->
-					</ul>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Ingrese un nombre" required />
 
-				<!-- Menu -->
-					<ul class="menu">
-						<li>&copy; 2022-2023 Kikowolf - Fede Iacono</li><!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li> -->
-					</ul>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Ingrese un email" />
 
-			</footer>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" placeholder="Ingrese su mensaje"></textarea>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+          <button id="enviar" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
 
-	</body>
+    <script src="script.js"></script>
+  </body>
 </html>
