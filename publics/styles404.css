@@ -8,11 +8,12 @@
 }
 
 a {
-  color: #303030;
+  color: #ffffff;
 }
 
 body {
-  background: linear-gradient(to bottom, #a2b9fc, white, #a2b9fc);
+  margin: 10px auto;
+  background: black;
   font-family: verdana, times;
   min-height: auto;
 }
@@ -24,16 +25,17 @@ section {
 }
 
 .content {
+  color: white;
   display: flex;
   align-self: center;
   margin-top: 150px;
   margin-left: 170px;
-  border: black;
+  border: rgb(255, 255, 255);
   align-items: auto;
 }
 
 .content h2 {
-  color: #000000;
+  color: #ffffff;
   font-size: 7em;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -41,11 +43,11 @@ section {
 
 .content h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 3px #000000;
+  -webkit-text-stroke: 3px #ffffff;
 }
 
 .content h2:nth-child(2) {
-  color: #000000;
+  color: #ffffff;
   animation: animate 4s ease-in-out infinite;
 }
 
@@ -55,7 +57,7 @@ section {
   margin-left: 20px;
   font-family: verdana;
   font-size: 18px;
-  color: #000000;
+  color: #ffffff;
 }
 
 @keyframes animate {
