@@ -1,3 +1,4 @@
+// -------------Desplazamiento suave--------------
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("nav a");
 
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     const targetId = event.currentTarget.getAttribute("href");
     const targetElement = document.querySelector(targetId);
-    const headerOffset = 70;
+    const headerOffset = 100;
     const elementPosition = targetElement.getBoundingClientRect().top;
     const offsetPosition = elementPosition - headerOffset;
 
@@ -34,6 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
   //--------------- Modo oscuro ------------------
   const darkModeToggle = document.getElementById("sign");
   const body = document.body;
+  const imagen = document.getElementById("sign");
+  // Función para actualizar la imagen según el modo
+function updateImage() {
+  if (body.classList.contains("dark-mode")) {
+    imagen.src = "./publics/img/sign1.png";
+  } else {
+    imagen.src = "./publics/img/sign2.png";
+  }
+}
   // Verifica si el usuario ha preferido el modo oscuro en su sistema
   const prefersDarkScheme = window.matchMedia(
     "(prefers-color-scheme: dark)"
@@ -41,9 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Si ya está en modo oscuro, cambia la apariencia predeterminada del sitio
   if (prefersDarkScheme) {
     body.classList.add("dark-mode");
+    updateImage(); //llama a la funcion de cambiar imagen
   }
   // Cambia entre modos claro y oscuro cuando se hace clic en el botón
   darkModeToggle.addEventListener("click", function () {
     body.classList.toggle("dark-mode");
+    updateImage();
   });
 });
