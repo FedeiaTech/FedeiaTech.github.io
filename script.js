@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //--------------- Modo oscuro ------------------
-  const darkModeToggle = document.getElementById("dark-mode-button");
+  const darkModeToggle = document.getElementById("sign");
   const body = document.body;
   // Verifica si el usuario ha preferido el modo oscuro en su sistema
   const prefersDarkScheme = window.matchMedia(
