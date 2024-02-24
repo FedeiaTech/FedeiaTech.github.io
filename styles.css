@@ -20,7 +20,7 @@ header {
   background-image: url(publics/img/forest-night1.jpg);
   image-rendering: pixelated;
   background-position: bottom;
-  opacity: 1;
+  filter: brightness(120%);
 }
 
 nav {
@@ -152,14 +152,14 @@ button {
 
 /* Estilos para el modo claro */
 body {
-  background: linear-gradient(rgb(107, 107, 107), white, white, rgb(107, 107, 107));
+  background: linear-gradient(rgb(156, 156, 156), white, white, rgb(0, 0, 0));
   background-color: #ffffff;
   color: #000000;
 }
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-  background: linear-gradient(rgb(0, 0, 0), black, black, rgb(11, 9, 48));
+  background: linear-gradient(rgb(0, 0, 0), black, black, rgb(5, 4, 32));
   color: #ffffff;
 }
 
