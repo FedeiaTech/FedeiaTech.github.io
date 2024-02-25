@@ -193,7 +193,7 @@ body.dark-mode {
 /*-Celular y tablets-*/
 @media screen and (max-width: 356px) {
   body main h1 {
-    margin: 180px 0 0 0;
+    margin: 200px 0 0 0;
   }
   
   .nav-box1{
