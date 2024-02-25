@@ -59,3 +59,15 @@ function updateImage() {
     updateImage();
   });
 });
+
+
+// Sonidos
+function playSelect() {
+  var audio = new Audio("./publics/fx/select.mp3");
+  audio.play();
+}
+
+function playSign() {
+  var audio = new Audio("./publics/fx/sign.mp3");
+  audio.play();
+}

@@ -1,9 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
-}
-
-p {
-  margin-bottom: 20px;
+  font-family: "Kode Mono", monospace;
 }
 
 /*-----------------------*/
@@ -88,10 +84,20 @@ main {
   padding: 20px;
 }
 
-main h1 {
+h1 {
+    font-family: "Micro 5", sans-serif;
+    font-weight: 1800;
+    font-style: normal;
   margin-top: 100px;
-  font-size: 35px;
+  font-size: 60px;
   padding: 20px 0;
+  text-shadow: 2px 0px 5px rgba(5, 2, 44, 0.9);
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-shadow: 2px 0px 10px rgba(0, 0, 0, 0.7);
 }
 
 section {
@@ -107,6 +113,14 @@ table {
 th,
 td {
   padding: 10px;
+}
+
+td .td-icon{
+padding: 0;
+}
+
+.icon{
+  width: 50px;
 }
 
 /*Formulario*/
@@ -161,6 +175,10 @@ body {
 body.dark-mode {
   background: linear-gradient(rgb(0, 0, 0), black, black, rgb(5, 4, 32));
   color: #ffffff;
+  h1{
+    color: rgb(185, 185, 41);
+    text-shadow: 3px 0px 25px rgb(255, 255, 255, 0.3);
+  }
 }
 
 /* Responsive */
