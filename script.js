@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  /* ----Formulario----(inactivo)*/
+  /*
   const contactForm = document.getElementById("contact-form");
 
   contactForm.addEventListener("submit", function (event) {
@@ -31,19 +33,20 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Formulario enviado con éxito");
     event.target.reset();
   });
+*/
 
   //--------------- Modo oscuro ------------------
   const darkModeToggle = document.getElementById("sign");
   const body = document.body;
   const imagen = document.getElementById("sign");
   // Función para actualizar la imagen según el modo
-function updateImage() {
-  if (body.classList.contains("dark-mode")) {
-    imagen.src = "./publics/img/sign1.png";
-  } else {
-    imagen.src = "./publics/img/sign2.png";
+  function updateImage() {
+    if (body.classList.contains("dark-mode")) {
+      imagen.src = "./publics/img/sign1.png";
+    } else {
+      imagen.src = "./publics/img/sign2.png";
+    }
   }
-}
   // Verifica si el usuario ha preferido el modo oscuro en su sistema
   const prefersDarkScheme = window.matchMedia(
     "(prefers-color-scheme: dark)"
@@ -60,8 +63,7 @@ function updateImage() {
   });
 });
 
-
-// Sonidos
+// ------Sonidos-------
 function playSelect() {
   var audio = new Audio("./publics/fx/select.mp3");
   audio.play();
