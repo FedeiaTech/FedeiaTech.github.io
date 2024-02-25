@@ -86,11 +86,9 @@ main {
 
 h1 {
     font-family: "Micro 5", sans-serif;
-    font-weight: 1800;
     font-style: normal;
-  margin-top: 100px;
   font-size: 60px;
-  padding: 20px 0;
+  padding: 30px 0;
   text-shadow: 2px 0px 5px rgba(5, 2, 44, 0.9);
 }
 
