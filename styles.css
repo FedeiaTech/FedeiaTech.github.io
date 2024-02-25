@@ -151,6 +151,7 @@ color: red;
 .td-front {
   border: 3px solid rgb(185, 185, 41);
   border-radius: 5px;
+  vertical-align: middle;
 }
 
 
@@ -175,11 +176,19 @@ color: red;
 }
 
 #img-char{
-max-width: 40vw;
+max-width: 35vw;
 }
 
 #img-skll{
+  padding-top: 5vw;
 max-width: 7vw;
+}
+
+.td-back{
+  padding: 7%;
+  vertical-align: middle;
+font-size: 3vw;
+line-height: 1.5;
 }
 
 /*Formulario*/
