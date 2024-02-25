@@ -111,6 +111,12 @@ table {
   font-size: 2.5vw
 }
 
+table a{
+  font-weight: bold;
+  color: rgba(72, 77, 9, 1);
+  text-shadow: 2px 0px 10px rgba(246, 255, 113, 0.3);
+}
+
 th,
 td {
   
@@ -118,7 +124,6 @@ td {
   vertical-align: middle;
   max-width: 30%;
 }
-
 
 .icon{
   max-width: 100%;
