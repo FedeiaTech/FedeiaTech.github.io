@@ -95,7 +95,11 @@ h1 {
   text-shadow: 2px 0px 5px rgba(5, 2, 44, 0.9);
 }
 
-p {
+h2{
+font-size: 2.5vw;
+}
+
+.text p {
   margin-bottom: 20px;
   line-height: 1.5;
   text-shadow: 2px 0px 10px rgba(0, 0, 0, 0.7);
@@ -144,8 +148,8 @@ section {
 }
 
 /*tabla de Personaje*/
-th, td{
-color: red;
+#tarjeta-personaje th{
+font-size: 2vw;
 width: auto;
 }
 
@@ -173,8 +177,12 @@ width: auto;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 8vw 2vw;
+  padding: 3vw 2vw 0 0;
   font-size: 1.5vw;
+}
+
+.td-front .character-icons .columna-buff p{
+  margin-bottom: 4vh;
 }
 
 .td-front .character-icons .columna-buff .img-buff{
@@ -196,12 +204,9 @@ width: auto;
   border: 1px solid rgb(51, 51, 51);
   margin: 1vw;
   padding: 1vw;
+  line-height: 1.5;
 }
 
-.td-front .poten h3{
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
 
 .td-back .conocimientos{
   font-size: 2vw;
@@ -211,6 +216,7 @@ width: auto;
 
 #img-char{
 max-width: 30vw;
+object-fit: contain;
 }
 
 #img-skll{
@@ -236,9 +242,11 @@ line-height: 1.5;
 }
 
 .td-back .habilidades ul li{
-  padding: 2vw 0 .5vw;
-  font-size: 2vw;
+  margin-left: 1vw;
+  padding: 1vw 0 .5vw;
+  font-size: 1.5vw;
   list-style-type: circle;
+  list-style-position: inside;
 }
 
 /*Formulario*/
@@ -294,7 +302,7 @@ body.dark-mode {
   background: linear-gradient(rgb(0, 0, 0), black, black, rgb(5, 4, 32));
   color: #ffffff;
   h1 {
-    color: rgb(185, 185, 41);
+    color: rgb(226, 226, 226);
     text-shadow: 3px 0px 25px rgb(255, 255, 255, 0.3);
   }
 }
