@@ -39,12 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const darkModeToggle = document.getElementById("sign");
   const body = document.body;
   const imagen = document.getElementById("sign");
+  const imagenFondo = document.getElementById("img-fondo");
   // Función para actualizar la imagen según el modo
   function updateImage() {
     if (body.classList.contains("dark-mode")) {
       imagen.src = "./publics/img/sign1.png";
+      imagenFondo.src = "./publics/img/forest-night1.jpg";
     } else {
       imagen.src = "./publics/img/sign2.png";
+      imagenFondo.src = "./publics/img/forest-day.jpg";
     }
   }
   // Verifica si el usuario ha preferido el modo oscuro en su sistema
