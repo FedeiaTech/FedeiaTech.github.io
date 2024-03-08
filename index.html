@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi portfolio - Fede Iacono</title>
 
+  <link rel="icon" href="./publics/favicon/favicon-16x16.png">
   <link rel="stylesheet" href="./publics/reset.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -154,7 +155,7 @@
 
     <!--Acerca de mi-->
     <section class="text">
-      <h2>Sobre mi</h2>
+      <h2>Sobre mí</h2>
       <p>
         Cada diseño, cada línea de código, refleja mi constante aprendizaje y búsqueda por incorporar experiencias
         únicas.
@@ -305,10 +306,10 @@
       <h2>Contacto</h2>
       <form id="contact-form">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" placeholder="Ingrese un nombre" required />
+        <input type="text" id="name" name="name" placeholder="Ingrese un nombre" autocomplete="given-name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Ingrese un email" />
+        <input type="email" id="email" name="email" placeholder="Ingrese un email" autocomplete="off" required />
 
         <label for="message">Mensaje:</label>
         <textarea id="message" name="message" placeholder="Ingrese su mensaje"></textarea>
