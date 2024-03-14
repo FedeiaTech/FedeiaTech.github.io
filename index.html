@@ -9,6 +9,7 @@
   <link rel="icon" href="./publics/favicon/favicon-16x16.png">
   <link rel="stylesheet" href="./publics/reset.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./publics/modal.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -28,10 +29,10 @@
               <a href="#proyectos" onmouseover="playSelect()">Proyectos</a>
             </li>
             <li>
-              <a href="#Sobre mi" onmouseover="playSelect()">Sobre mi</a>
+              <a href="#sobre-mi" onmouseover="playSelect()">Sobre mi</a>
             </li>
             <li>
-              <a href="#Otros links" onmouseover="playSelect()">links</a>
+              <a href="#otros-links" onmouseover="playSelect()">links</a>
             </li>
           </ul>
         </div>
@@ -46,7 +47,7 @@
   </header>
 
   <main>
-    <!--Descripcion de la pag-->
+    <!--Titulo y descripcion de la pag-->
     <section id="inicio" class="text">
       <h1>Bienvenido a mi Portfolio</h1>
       <p>
@@ -69,10 +70,13 @@
 
     <!--Tabla de proyectos-->
     <section id="proyectos" class="window">
+      <!-- Marco de la ventana -->
       <div class="window-title">
+        <!-- Titulo -->
         <div class="t-window">
           <h2>Mis Proyectos</h2>
         </div>
+        <!-- SVGs -->
         <div class="b-window">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false"
             class="chakra-icon css-9g9lgg" alt="Minimize" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -97,6 +101,7 @@
           </svg>
         </div>
       </div>
+      <!-- Contenido (Tabla) -->
       <div class="window-content">
         <table>
           <tr>
@@ -105,48 +110,77 @@
             <th>Descripción</th>
           </tr>
           <tr>
+            <!-- Primer item -->
             <td class="td-icon">
+              <!-- Icono -->
               <img src="./publics/img/jewel-icon.png" alt="shield" class="icon" />
+              <!-- Modal -->
+              <div class="modal">
+                <div class="contenido-modal">
+                  <img class="modal-icon" src="./publics/img/jewel-icon.png" alt="diamond icon">
+                  <p>Los contenidos con la propiedad "Diamante" simbolizan una página web con resultados excepcionales</p>
+                </div>
+              </div>
             </td>
+            <!-- Link -->
             <td>
               <a href="./portfolio_01/portfolio_btstrp.html">Web de imágenes generativas</a>
             </td>
-            <td>Página con uso de Bootstrap</td>
+            <!-- Descripcion -->
+            <td>
+              <p>Página con uso de Bootstrap</p>
+            </td>
           </tr>
           <tr>
+            <!-- Segundo item -->
             <td class="td-icon">
+              <!-- Icono -->
               <img src="./publics/img/talk-icon.png" alt="shield" class="icon" />
             </td>
+            <!-- Link -->
             <td>
               <a href="./Javascript/javascript_index.html">Javascript</a>
             </td>
+            <!-- Descripcion -->
             <td>Sección de prácticas de Javascript</td>
           </tr>
           <tr>
+            <!-- Tercer item -->
             <td class="td-icon">
+              <!-- Icono -->
               <img src="./publics/img/shield-icon.png" alt="shield" class="icon" />
             </td>
+            <!-- Link -->
             <td>
               <a href="./Practicas HTML/01 Barberia/index.html">Prácticas 1</a>
             </td>
+            <!-- Descripcion -->
             <td>Barbería Penélope</td>
           </tr>
           <tr>
+            <!-- Cuarto item -->
             <td class="td-icon">
+              <!-- Icono -->
               <img src="./publics/img/shield-icon.png" alt="shield" class="icon" />
             </td>
+            <!-- Link -->
             <td>
               <a href="./Practicas HTML/02 Challenge - Encriptador/index.html">Prácticas 2</a>
             </td>
+            <!-- Descripcion -->
             <td>Challenge 1 de Alura - Encriptador</td>
           </tr>
           <tr>
+            <!-- Quinto item -->
             <td class="td-icon">
+              <!-- Icono -->
               <img src="./publics/img/talk-icon.png" alt="talk icon" class="icon" />
             </td>
+            <!-- Link -->
             <td>
               <a href="./Programando/index.html">Programando</a>
             </td>
+            <!-- Descripcion -->
             <td>Sitio donde tomo notas de mis aprendizajes</td>
           </tr>
         </table>
@@ -154,8 +188,8 @@
     </section>
 
     <!--Acerca de mi-->
-    <section class="text">
-      <h2>Sobre mí</h2>
+    <section id="sobre-mi" class="text">
+      <h2>Sobre mi</h2>
       <p>
         Cada diseño, cada línea de código, refleja mi constante aprendizaje y búsqueda por incorporar experiencias
         únicas.
@@ -172,12 +206,15 @@
       </p>
     </section>
 
-    <!--Tabla de personaje-->
+    <!--Ficha de personaje-->
     <section id="character" class="window">
+      <!-- Marco de la ventana -->
       <div class="window-title">
+        <!-- Titulo -->
         <div class="t-window">
-          <h2>Info de personaje</h2>
+          <h2>Ficha de personaje</h2>
         </div>
+        <!-- SVGs -->
         <div class="b-window">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false"
             class="chakra-icon css-9g9lgg" alt="Minimize" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -203,22 +240,29 @@
         </div>
       </div>
 
+      <!-- Contenido de la ventana -->
       <div class="window-content">
+        <!-- Central -->
         <p>Tipo: Fullstack developer</p>
+        <!-- Fichas tipo tabla -->
         <table id="tarjeta-personaje">
           <tr>
+            <!-- Titulo izquierdo -->
             <th>Front</th>
+            <!-- Titulo derecho-->
             <th>Back</th>
           </tr>
           <tr>
+            <!-- Contenido Izquierdo (Fontend) -->
             <td class="td-front">
+              <!-- Imagen animada(izq) -->
               <div class="character-icons">
                 <img src="./publics/img/running.gif" alt="warrior character with cape running, animated gif"
                   id="img-char" />
-                <!--Columna de buffs-->
-                <div class="columna-buff">
+                <!--Columna de buffs(der) -4 items- -->
+                <div class="columna-buff" >
                   <div class="buff1">
-                    <img class="img-buff" src="./publics/img/react-icon.png" alt="React icon" />
+                    <img class="img-buff" src="./publics/img/react-icon.png" alt="React icon" onmouseover="playSelect()"/>
                     <p>React</p>
                   </div>
                   <div class="buff2">
@@ -230,6 +274,7 @@
                   <div class="buff3">
                     <img class="img-buff" src="./publics/img/icon-bootstrap.png" alt="Bootstrap" />
                     <p>Bootstrap</p>
+                    <br>
                   </div>
                   <div class="buff3">
                     <img class="img-buff" src="./publics/img/icon-jquery.png" alt="JQuery" />
@@ -237,7 +282,7 @@
                   </div>
                 </div>
               </div>
-              <!--Fila de habilidades-->
+              <!--Fila de habilidades -3 items- -->
               <div class="skill-icons">
                 <div class="sk1">
                   <img id="img-skll" src="./publics/img/skill-html.png" alt="HTML5 icon" />
@@ -252,7 +297,7 @@
                   <p>Javascript</p>
                 </div>
               </div>
-              <!--Potenciadores-->
+              <!--Descripcion de Potenciadores-->
               <div class="poten">
                 <h3>Clase: Diseñador gráfico</h3>
                 <p>.</p>
@@ -264,7 +309,7 @@
                 </ul>
               </div>
             </td>
-            <!--Backend-->
+            <!--Contenido derecho (Backend) -->
             <td class="td-back">
               <div class="conocimientos">
                 <h3>Conocimientos</h3>
@@ -302,7 +347,7 @@
 
     <!--Links-->
 
-    <section id="contacto" class="text">
+    <section id="otros-links" class="text">
       <h2>Contacto</h2>
       <form id="contact-form">
         <label for="name">Nombre:</label>

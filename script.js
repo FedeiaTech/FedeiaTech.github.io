@@ -76,3 +76,20 @@ function playSign() {
   var audio = new Audio("./publics/fx/sign.mp3");
   audio.play();
 }
+
+//------------Descripcion de imagenes--------------------
+//-----modal----//
+function mostrarModal() {
+  const modal = document.querySelector(".modal");
+  modal.classList.add("visible");
+}
+
+const imagen1 = document.querySelector(".td-icon img");
+imagen1.addEventListener("click", mostrarModal);
+
+const modal = document.querySelector(".modal");
+modal.addEventListener("click", function(e) {
+  if (e.target === modal) {
+    modal.classList.remove("visible");
+  }
+});
