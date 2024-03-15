@@ -142,8 +142,8 @@ section {
 
 #proyectos table a {
   font-weight: bold;
-  color: rgba(72, 77, 9, 1);
-  text-shadow: 2px 0px 10px rgba(246, 255, 113, 0.3);
+  color: rgb(102, 109, 13);
+  text-shadow: 2px 0px 10px rgba(85, 90, 17, 0.3);
 }
 
 #proyectos table a:hover,
@@ -162,8 +162,8 @@ section {
 .icon {
   max-width: 100%;
   width: auto;
-  border: 3px solid rgb(185, 185, 41);
-  border-radius: 3px;
+  border: 0.3vw solid rgb(185, 185, 41);
+  border-radius: 0px;
 }
 
 .icon:hover,
@@ -175,6 +175,7 @@ section {
 #character p{
 text-align: center;
 font-size: 2vw;
+padding-bottom: 2vw;
 }
 
 #character .columna-buff p{
@@ -329,7 +330,36 @@ button {
 .window-content table{
   margin: 0 auto;
 }
+/*---------------------------*/
 
+
+/*----Animaciones----*/
+.info,
+.more-info{
+  opacity: 0;
+  animation: aparecer-desaparecer 2s infinite;
+}
+
+.window-content .info{
+padding: 1vw;
+}
+
+.window-content .more-info{
+  font-size: 70%;
+  padding: 2vw;
+}
+
+@keyframes aparecer-desaparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*----------------------------*/
 
 
@@ -338,7 +368,7 @@ button {
 
 /* Estilos para el modo claro */
 body {
-  background: linear-gradient(rgb(158, 158, 158), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(117, 117, 117));
+  background: linear-gradient(rgb(158, 158, 158), rgb(218, 218, 218), rgb(218, 218, 218), rgb(218, 218, 218), rgb(117, 117, 117));
   background-color: #ffffff;
   color: #000000;
 }
@@ -349,11 +379,11 @@ body {
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-  background: linear-gradient(rgb(0, 0, 0), black, black, rgb(5, 4, 32));
+  background: linear-gradient(rgb(0, 0, 0), rgb(9, 4, 39), rgb(9, 4, 39), rgb(5, 4, 32));
   color: #ffffff;
   h1 {
     color: rgb(226, 226, 226);
-    text-shadow: 3px 0px 25px rgb(255, 255, 255, 0.3);
+    text-shadow: 1px 0px 5px rgb(255, 255, 255, 0.3);
   }
 }
 
