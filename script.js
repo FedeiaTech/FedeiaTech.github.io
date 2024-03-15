@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// ------Sonidos-------
+// ------Sonidos-------(Activados desde el HTML)
 function playSelect() {
   var audio = new Audio("./publics/fx/select.mp3");
   audio.play();
@@ -77,54 +77,63 @@ function playSign() {
   audio.play();
 }
 
-//------------Descripcion de imagenes (td-icons)--------------------
+//------------Descripcion de Iconos (td-icons)--------------------
 //-----modal----//
+/*
+EJEMPLO DEL PRIMER ITEM
+<!-- Primer item -->
+            <td class="td-icon" id="td-1">
+              <!-- Icono -->
+              <img src="./publics/img/jewel-icon.png" alt="diamond" class="icon" />
+              <!-- Modal -->
+              <div class="modal" id="modal-1">
+                <div class="modal-title">
+                  <!-- Titulo -->
+                  <h2>Info</h2>
+                  <div class="contenido-modal">
+                    <img class="modal-icon" src="./publics/img/jewel-icon.png" alt="diamond icon">
+                    <p>Los contenidos con la propiedad "Diamante" simbolizan una página web con resultados excepcionales
+                    </p>
+                    <p class="more-info">Presiona para cerrar</p>
+                  </div>
+                </div>
+              </div>
+            </td>
+*/
+
 function mostrarModal(id) {
   const modal = document.getElementById(id);
   modal.classList.add("visible");
-}
+} //Busca un elemento en el documento con el ID proporcionado (id) y lo asigna a la variable modal.
+  //Agrega la clase CSS "visible" al elemento modal, lo que generalmente lo hace visible en la pantalla.
+
 
 function cerrarModal(id) {
   const modal = document.getElementById(id);
   modal.classList.remove("visible");
-}
+} //Busca un elemento en el documento con el ID proporcionado (id) y lo asigna a la variable modal.
+  //Elimina la clase CSS "visible" del elemento modal, lo que generalmente lo oculta de la pantalla.
 
-const imagen1 = document.querySelector("#td-1 img");
-imagen1.addEventListener("click", function() {
-  mostrarModal("modal-1");
-});
 
-const imagen2 = document.querySelector("#td-2 img");
-imagen2.addEventListener("click", function() {
-  mostrarModal("modal-2");
-});
+const tdImges = document.querySelectorAll("td img");
+//Selecciona todas las imágenes dentro de elementos "td" de forma genérica, evitando la selección manual de cada imagen por separado (imagen1, imagen2, etc.). Esto hace que el código sea más adaptable a cambios en la estructura HTML.
 
-const imagen3 = document.querySelector("#td-3 img");
-imagen3.addEventListener("click", function() {
-  mostrarModal("modal-3");
-});
-
-const imagen4 = document.querySelector("#td-4 img");
-imagen4.addEventListener("click", function() {
-  mostrarModal("modal-4");
-});
-
-const imagen5 = document.querySelector("#td-5 img");
-imagen5.addEventListener("click", function() {
-  mostrarModal("modal-5");
+tdImges.forEach(imagen => {
+  //Recorre todas las imágenes encontradas y agrega event listeners a cada una de ellas de forma dinámica, reduciendo la repetición de código y mejorando la mantenibilidad.
+  imagen.addEventListener("click", () => {
+    //Obtiene el ID del modal a mostrar directamente del ID del elemento "td" padre de la imagen, eliminando la necesidad de condicionales o código adicional.
+    mostrarModal(`modal-${imagen.parentElement.id.split("-")[1]}`);
+  });
 });
 
 const modals = document.querySelectorAll(".modal");
 
-for (const modal of modals) {
+modals.forEach(modal => {   //Recorre todos los modales y agrega event listeners de cierre de forma dinámica, evitando la repetición.
   const contenidoModal = modal.querySelector(".contenido-modal");
-  contenidoModal.addEventListener("click", function() {
-    cerrarModal(modal.id);
-  });
-  
-  modal.addEventListener("click", function(event) {
-    if (event.target === modal) {
+  modal.addEventListener("click", (event) => {
+    if (event.target != modal || event.target === contenidoModal) {
+    //Combina la comprobación del click en el propio modal y en su contenido en un solo if, simplificando el código.
       cerrarModal(modal.id);
     }
   });
-}
+});
