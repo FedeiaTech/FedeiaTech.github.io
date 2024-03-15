@@ -77,19 +77,54 @@ function playSign() {
   audio.play();
 }
 
-//------------Descripcion de imagenes--------------------
+//------------Descripcion de imagenes (td-icons)--------------------
 //-----modal----//
-function mostrarModal() {
-  const modal = document.querySelector(".modal");
+function mostrarModal(id) {
+  const modal = document.getElementById(id);
   modal.classList.add("visible");
 }
 
-const imagen1 = document.querySelector(".td-icon img");
-imagen1.addEventListener("click", mostrarModal);
+function cerrarModal(id) {
+  const modal = document.getElementById(id);
+  modal.classList.remove("visible");
+}
 
-const modal = document.querySelector(".modal");
-modal.addEventListener("click", function(e) {
-  if (e.target === modal) {
-    modal.classList.remove("visible");
-  }
+const imagen1 = document.querySelector("#td-1 img");
+imagen1.addEventListener("click", function() {
+  mostrarModal("modal-1");
 });
+
+const imagen2 = document.querySelector("#td-2 img");
+imagen2.addEventListener("click", function() {
+  mostrarModal("modal-2");
+});
+
+const imagen3 = document.querySelector("#td-3 img");
+imagen3.addEventListener("click", function() {
+  mostrarModal("modal-3");
+});
+
+const imagen4 = document.querySelector("#td-4 img");
+imagen4.addEventListener("click", function() {
+  mostrarModal("modal-4");
+});
+
+const imagen5 = document.querySelector("#td-5 img");
+imagen5.addEventListener("click", function() {
+  mostrarModal("modal-5");
+});
+
+const modals = document.querySelectorAll(".modal");
+
+for (const modal of modals) {
+  const contenidoModal = modal.querySelector(".contenido-modal");
+  contenidoModal.addEventListener("click", function() {
+    cerrarModal(modal.id);
+  });
+  
+  modal.addEventListener("click", function(event) {
+    if (event.target === modal) {
+      cerrarModal(modal.id);
+    }
+  });
+}
