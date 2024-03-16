@@ -100,6 +100,26 @@ section {
   margin: 10vw 0;
 }
 
+figcaption{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  position: relative;
+}
+
+figcaption h1{
+  z-index: 10;
+}
+
+figcaption img{
+  width: 80%;
+  padding: 0 5vw;
+  position: absolute;
+  height: auto;
+  max-width: 46%;
+  max-height: 100%;
+}
+
 h1 {
   display: inline-block;
   font-family: "Micro 5", sans-serif;
