@@ -96,40 +96,42 @@ main {
   padding: 20px;
 }
 
+figcaption{
+  text-align: center;
+  color: #9c9c9c;
+}
+
 section {
-  margin: 10vw 0;
+  margin: 1vw 0;
 }
 
 figcaption{
   display: flex;
-  align-items: end;
-  justify-content: end;
   position: relative;
 }
 
-figcaption h1{
-  z-index: 10;
+.cover-title{
+  padding: 10vw 2vw;
 }
 
+figcaption .cover{
+  width: 100%;
+}
+
+
 figcaption img{
-  width: 80%;
-  padding: 0 0 0 20.4vw;
-  position: absolute;
+  width: 100%;
   height: auto;
-  max-width: 46%;
-  max-height: 100%;
-  opacity: .7;
+  position: absolute;
+  z-index: -1;
 }
 
 h1 {
   display: inline-block;
-  font-family: "Micro 5", sans-serif;
-  font-style: normal;
-  width: auto;
-  margin-top: 120px;
-  font-size: 9vw;
+  font-family: "Cinzel", serif;
+  font-size: 7vw;
   padding: 50px 0 20px;
-  text-shadow: 0px 2px 5px rgb(255, 255, 255);
+  opacity: 0.5;
 }
 
 h2 {
@@ -140,7 +142,6 @@ h2 {
 
 .text h2{
   font-size:  5vw;
-  padding-bottom: 2rem;
 }
 
 .text p {
@@ -400,7 +401,7 @@ body {
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-  background: linear-gradient(rgb(0, 0, 0), rgb(9, 4, 39), rgb(9, 4, 39), rgb(5, 4, 32));
+  background: linear-gradient(rgb(78, 78, 79), rgb(16, 7, 66), rgb(16, 7, 66), rgb(78, 78, 79));
   color: #ffffff;
   h1 {
     color: rgb(226, 226, 226);
@@ -413,16 +414,35 @@ body.dark-mode {
 main{
   width: 80%;
 }
+
+main .cover-title{
+  width: 100%;
+}
 }
 
 /*-Celular y tablets-*/
 @media screen and (max-width: 356px) {
-  body main h1 {
-    margin: 200px 0 0 0;
+  body figure {
+    margin: 20vh 0 5vh 0;
   }
 
+  figure h1{
+      padding: 5vh 0 20px;
+  }
+
+  figure figcaption h2{
+    padding: 0 0 0vh 0;
+  }
+
+  figure .cover-title {
+    padding: 5vw 2vw 0 0;
+}
+
+#figure{
+  padding: 5vh 0 0 0;
+}
   .nav-box1 {
-    padding: 5px 30px 0px;
+    padding: 5px 10px 0px;
   }
 
   #character .columna-buff p{
@@ -431,7 +451,15 @@ main{
 }
 
 @media screen and (max-width: 597px) {
-  body h1 {
-    margin: 150px 0 0 0;
+  body figure {
+    margin: 15vh 0 5vh 0;
   }
+
+  figure h2{
+    padding: 0 0 5vh 0;
+  }
+
+  .cover-title {
+    padding: 3vw 2vw; */
+}
 }

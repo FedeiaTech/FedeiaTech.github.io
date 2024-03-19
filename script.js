@@ -1,3 +1,15 @@
+// -------------Cover de la pagina----------------
+// const contenedor = document.querySelector(".figcaption");
+// const cover = document.querySelector(".cover");
+
+// cover.onload = function() {
+//   const anchoContenedor = figcaption.clientWidth;
+//   const altoContenedor = figcaption.clientHeight;
+
+//   cover.style.width = anchoContenedor + "px";
+//   cover.style.height = altoContenedor + "px";
+// };
+
 // -------------Desplazamiento suave--------------
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("nav a");
@@ -14,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const elementPosition = targetElement.getBoundingClientRect().top;
     const offsetPosition = elementPosition - headerOffset;
 
-    window.scrollBy({
+    window.scrollBy({ 
       top: offsetPosition,
       behavior: "smooth",
     });
