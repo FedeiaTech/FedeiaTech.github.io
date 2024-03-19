@@ -97,17 +97,15 @@ main {
 }
 
 figcaption{
+  display: flex;
+  position: relative;
   text-align: center;
   color: #9c9c9c;
+  justify-content: center;
 }
 
 section {
   margin: 1vw 0;
-}
-
-figcaption{
-  display: flex;
-  position: relative;
 }
 
 .cover-title{
@@ -132,6 +130,10 @@ h1 {
   font-size: 7vw;
   padding: 50px 0 20px;
   opacity: 0.5;
+}
+
+main .cover-title h2{
+  font-size: 3vw;
 }
 
 h2 {
@@ -413,10 +415,6 @@ body.dark-mode {
 @media screen and (min-width: 800px) {
 main{
   width: 80%;
-}
-
-main .cover-title{
-  width: 100%;
 }
 }
 
