@@ -96,6 +96,22 @@ main {
   padding: 20px;
 }
 
+figure{
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: #9c9c9c;
+  justify-content: center;
+  margin: 10vh 0;
+}
+
+figure img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+}
+
 figcaption{
   display: flex;
   position: relative;
@@ -110,18 +126,6 @@ section {
 
 .cover-title{
   padding: 10vw 2vw;
-}
-
-figcaption .cover{
-  width: 100%;
-}
-
-
-figcaption img{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: -1;
 }
 
 h1 {
@@ -420,20 +424,22 @@ main{
 
 /*-Celular y tablets-*/
 @media screen and (max-width: 356px) {
-  body figure {
-    margin: 20vh 0 5vh 0;
+  body figure .cover, 
+  body figure figcaption .cover-title{ /* +3 */
+    padding: 7vh 0 2vw 0;
+    margin: 5vh 0 0 0;
   }
 
-  figure h1{
+  /* figure h1{
       padding: 5vh 0 20px;
-  }
-
-  figure figcaption h2{
+  } */
+/* 
+  figure h2{
     padding: 0 0 0vh 0;
-  }
+  } */
 
-  figure .cover-title {
-    padding: 5vw 2vw 0 0;
+  /* figure .cover-title {
+    padding: 5vw 2vw 0 0; */
 }
 
 #figure{
@@ -449,8 +455,8 @@ main{
 }
 
 @media screen and (max-width: 597px) {
-  body figure {
-    margin: 15vh 0 5vh 0;
+  body figure { /* +2 */
+    margin: 15vh 0;
   }
 
   figure h2{
