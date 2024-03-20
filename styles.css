@@ -1,5 +1,6 @@
 body {
-  font-family: "Cinzel", serif; /*"Open Sans", sans-serif;*/
+  font-family: "Cinzel", serif;
+  /*"Open Sans", sans-serif;*/
 }
 
 /*---------------------------------------------------------------------*/
@@ -119,9 +120,9 @@ figcaption {
   justify-content: center;
 }
 
-section {
+/* section {
   margin-bottom: 11vh;
-}
+} */
 
 .cover-title {
   padding: 10vw 2vw;
@@ -161,12 +162,12 @@ h2 {
   font-size: 3vw;
 }
 
-.texto-imagen{
+.texto-imagen {
   display: flex;
   align-items: start;
 }
 
-.img-float{
+.img-float {
   float: right;
   margin: 0 2vw;
   /* border: 1px solid yellow; */
@@ -176,7 +177,7 @@ h2 {
   filter: drop-shadow(0px 0px 7px rgba(200, 194, 252, 0.4)) brightness(90%);
 }
 
-.img-float:hover{
+.img-float:hover {
   transition: 1000ms;
   filter: drop-shadow(0px 0px 7px rgba(238, 255, 0, 0.9)) brightness(90%);
 }
@@ -200,8 +201,8 @@ h2 {
 }
 
 /*Tabla de proyectos*/
-#proyectos th{
-font-weight: bold;
+#proyectos th {
+  font-weight: bold;
 }
 
 #proyectos th,
@@ -258,7 +259,7 @@ font-weight: bold;
   opacity: 1;
 }
 
-.td-front img{
+.td-front img {
   filter: drop-shadow(2px -2px 7px rgba(0, 0, 0, 0.8)) brightness(90%);
 }
 
@@ -377,7 +378,7 @@ button {
   justify-content: space-between;
 }
 
-.window-title h2{
+.window-title h2 {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -460,18 +461,29 @@ body.dark-mode {
   }
 }
 
+@media screen and (min-width: 417px) {
+  section {
+    margin-bottom: 11vh;
+  }
+}
+
 /*-Celular y tablets-*/
 @media screen and (max-width: 356px) {
-
-  body figure .cover,
-  body figure figcaption .cover-title {
+  #figure {
     /* +3 */
-    padding: 7vh 0 2vw 0;
+    margin: 15vh 0 10vh 0;
+  }
+
+  body figure + .cover,
+  body figure figcaption + .cover-title {
+    /* +3 */
+    padding: 7vh 0 2vh 0;
     margin: 5vh 0 0 0;
   }
 
-  header nav .nav-box1 { /* +2 */
-    padding: 2vh 7vw ;
+  header nav .nav-box1 {
+    /* +2 */
+    padding: 2vh 7vw;
   }
 
   #character .columna-buff p {
@@ -479,22 +491,30 @@ body.dark-mode {
   }
 }
 
+@media screen and (max-width: 416px) {
+  body figure .cover,
+  body figure figcaption .cover-title {
+    padding: 15vh 0 0vh 0;
+  }
+}
+
 @media screen and (max-width: 597px) {
   body figure {
     /* +2 */
-    margin: 15vh 0 12vh 0;
+    margin: 15vh 0 16vh 0;
   }
 
-  figure h2 {
+  /* figure h2 {
     padding: 0 0 5vh 0;
-  }
+  } */
 
   .cover-title {
     padding: 3vw 2vw;
     */
   }
 
-  header .nav-box1 { /* +1 */
-    padding: 0vh 7vw ;
+  header .nav-box1 {
+    /* +1 */
+    padding: 0vh 7vw;
   }
 }
