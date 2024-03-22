@@ -105,7 +105,8 @@ figure {
   margin: 10vh 0;
 }
 
-figure img {
+.cover-img {
+  image-rendering: pixelated;
   width: 100%;
   height: auto;
   position: absolute;
@@ -175,6 +176,7 @@ h2 {
   width: 30vw;
   height: auto;
   filter: drop-shadow(0px 0px 7px rgba(200, 194, 252, 0.4)) brightness(90%);
+  image-rendering: pixelated;
 }
 
 .img-float:hover {
@@ -474,7 +476,7 @@ body.dark-mode {
     margin: 15vh 0 10vh 0;
   }
 
-  body figure + .cover,
+  body figure + .cover-img,
   body figure figcaption + .cover-title {
     /* +3 */
     padding: 7vh 0 2vh 0;
@@ -492,7 +494,7 @@ body.dark-mode {
 }
 
 @media screen and (max-width: 416px) {
-  body figure .cover,
+  body figure .cover-img,
   body figure figcaption .cover-title {
     padding: 15vh 0 0vh 0;
   }

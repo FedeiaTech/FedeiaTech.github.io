@@ -8,13 +8,74 @@
 <body>
     <!-- Encabezado -->
     <header>
-
+      <nav>
+        <div class="logo">
+          <a href="/">
+            <!-- mas adelante agregaremos iconos -->
+            <span>CAC - Movies</span>
+          </a>
+        </div>
+      </nav>
     </header>
     <!-- Contenido -->
     <main>
         <!-- form-wrapper: Formulario -->
      <section id="form-wrapper" >
       <h2>Registro</h2>
+      <form action="#" id="formRegister" method="GET" novalidate>
+       <div class="form-control">
+        <label >Nombre</label>
+        <input type="text" name="firstname" id="firstname" required>
+       </div>
+       <div class="error" id="error-firstname"></div>
+       <div class="form-control">
+        <label>Apellido</label>
+        <input type="text" name="lastname" id="lastname" required >
+       </div>
+        <div class="error" id="error-lastname"></div>
+        <div class="form-control">
+            
+            <label>Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="error" id="error-email"></div>
+        <div class="form-control">
+            <label>Contraseña</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="error" id="error-password"></div>
+         <div class="form-control">
+            <label id="label-birthdate">Fecha de Nacimiento</label>
+            <input type="date" name="birthdate" id="birthdate" required >
+         </div>
+
+   <div class="form-control">
+    <select name="country" id="country" class="form-select">
+        <option value="">Pais</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+
+    </select>
+   </div>
+   <div class="form-terms">
+    <div class="terms">
+      <input type="checkbox" id="terms">
+      <label for="terms">Acepto terminos y condiciones</label> <!--el for debe coincidir con el id de arriba-->
+    </div>
+   </div>
+   <button type="submit">Registrate</button>
+   <div class="form-help">
+    <a href="#">Necesitas ayuda?</a>
+   </div>
+    </form>
      </section>
     </main>
     <!-- pie -->

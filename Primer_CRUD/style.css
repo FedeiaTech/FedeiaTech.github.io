@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+#app {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+#nueva-tarea {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#nueva-tarea input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+#nueva-tarea button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: #fff;
+}
+
+#lista-tareas {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-tareas li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+#lista-tareas li .nombre {
+    font-weight: bold;
+}
+
+#lista-tareas li .acciones {
+    text-align: right;
+}
+
+#lista-tareas li .acciones button {
+    padding: 0 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#lista-tareas li .acciones button:hover {
+    background-color: #ddd;
+}

@@ -31,7 +31,8 @@
   }
 
   .contenido-modal {
-    background-color: #140d36;
+    color: black;
+    background-color: rgb(218, 218, 218);
     width: 50vw;
     padding: 6vw;
     border-radius: 0px;
@@ -39,4 +40,15 @@
 
   .modal-icon {
     width: 30%;
+  }
+
+  /*-----Modo oscuro-----*/
+  body.dark-mode {
+    .contenido-modal {
+      background-color: #140d36;
+    }
+
+    .contenido-modal p {
+      color: rgb(255, 255, 255);
+    }
   }
