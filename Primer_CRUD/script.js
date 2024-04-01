@@ -41,5 +41,5 @@ nuevaTareaForm.addEventListener('submit', (e) => {
 });
 
 // Inicializar la aplicación
-const tareasIniciales = ['Comprar leche', 'Hacer la colada', 'Llamar al doctor'];
+const tareasIniciales = ['Comprar cerveza', 'Poner musica fuerte', 'Llamar al doctor'];
 tareasIniciales.forEach(tarea => agregarTarea(tarea));
