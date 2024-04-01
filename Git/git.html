@@ -48,13 +48,13 @@
       <p>code .</p>
       <h3>.limpiar terminal</h3>
       <p>clear</p>
-
+      <br>
       <h2>En Visual Studio Code podemos activar la consola</h2>
       <h3>.Abrir terminal</h3>
       <p>ctrl + ñ</p>
       <h3>.Abrir Git bash para usar comandos</h3>
       <p>boton derecho sobre teminal > Git bash</p>
-
+      <br>
       <h2>Pasos creacion de repositorio:</h2>
       <h3>.Crear repositorio en GitHub -url-</h3>
       <h3>.Crear carpeta</h3>
@@ -65,7 +65,7 @@
       <p>git remote add origin -url del repositorio-</p>
       <p>git remote -v comprueba el repositorio</p>
       <h3>.Se pueden seguir creando, modificando y eliminando archivos</h3>
-
+      <br>
       <h2>Pasos para hacer un commit</h2>
       <h3>.Se crean, modifican o eliminan archivos (Untracked files)</h3>
       <h3>.Ver cambios hechos antes de usar 'add'</h3>
@@ -87,68 +87,101 @@
       <h3>.para salir</h3>
       <p>:q</p>
       <br>
-<h3>.ver cambios del commit en pocas lineas</h3>
-<p>git log --oneline</p>
+      <h3>.ver cambios del commit en pocas lineas</h3>
+      <p>git log --oneline</p>
+      <br>
+      <h3>.Se suben los archivos al repositorio remoto (Remote) --> debemos haber generado y configurado el repositorio
+        remoto (git init)</h3>
+      <p>git push nombreRemoto nombreRama</p>
+      <h3>o</h3>
+      <p>git push origin master/main</p>
+      <h3>o</h3>
+      <p>git push -u origin main</p>
+      <h3>empuja los documentos al repositorio(-u establece que luego el push no requiera escribir 'origin main' a solo
+        'main'</h3>
 <br>
-<h3>.Se suben los archivos al repositorio remoto (Remote) --> debemos haber generado y configurado el repositorio
-      remoto (git init)</h3>
-<p>git push nombreRemoto nombreRama</p>
-<h3>o</h3>
-<p>git push origin master/main</p>
-<h3>o</h3>
-<p>git push -u origin main</p>
-<h3>empuja los documentos al repositorio(-u establece que luego el push no requiera escribir 'origin main' a solo 'main'</h3>
-      
-<h2>.gitignore</h2>
-      
+      <h2>.gitignore</h2>
+      <h3>La creacion de este archivo contendra informacion de datos que seran ignorados y evitara subir archivos y
+        carpetas innecesarios</h3>
+      <h3>*.img, *.mp4</h3>
+      <h3>.env (carpeta de datos de usuario)</h3>
+      <h3>node_modules</h3>
+      <br>
+      <h3>.Se debe commitear la carpeta</h3>
+      <br>
 
-      
-      
-        
-           
-            
+      <h2>Branches (Ramas)</h2>
+      <h3>.Para saber en que rama estamos parados</h3>
+      <p>git branch</p>
+      <h3>.Para cambiar a una rama nueva y/o crearla</h3>
+      <p>git checkout -b ramaNueva</p>
+      <h3>.Volviendo a la rama principal y mergeamos una rama secundaria (absorberla)</h3>
+      <p>git checkout master</p>
+      <p>git merge ramaNueva</p>
 
-          ------------------------------------------------------
-          
-
-          La creacion de este archivo contendra informacion de datos que seran ignorados y evitara subir archivos y
-          carpetas innecesarios
-          *.img, *.mp4
-          .env (carpeta de datos de usuario)
-          node_modules
-
-          .Se debe commitear la carpeta
-
-          ------------------------------------------------------
-          Branches (Ramas)
-
-          .Para saber en que rama estamos parados
-          git branch
-
-          .Para cambiar a una rama nueva y/o crearla
-          git checkout -b ramaNueva
-
-          .Volviendo a la rama principal y mergeamos una rama secundaria (absorberla)
-          git checkout master
-          git merge ramaNueva
-
-          .Fusionar ramas con git merge
-          1. Posicionarse en la rama (Head ->)
-          git switch nombreRama
-          2. comando para absorber nuevos cambios de la rama
-          git merge nombreRama
-          3. Subir cambios
-          git push origin nombreRama
-
-          Otros:
-          git branch -M main establece main como rama principal
-          </p>
-          <img src="./img/armor.png">
+      <br>
+      <h3>.Fusionar ramas con git merge</h3>
+      <h3>1. Posicionarse en la rama (Head ->)</h3>
+      <p>git switch nombreRama</p>
+      <h3>2. comando para absorber nuevos cambios de la rama</h3>
+      <p>git merge nombreRama</p>
+      <h3>3. Subir cambios</h3>
+      <p>git push origin nombreRama</p>
+      <br>
+      <h3>Otros:</h3>
+      <p>git branch -M main establece main como rama principal</p>
+<br>
+<p>
+<h2>Glosario Consola</h2> <br>
+<br>
+pwd						<br>
+muestra la carpeta actual en la que nos encontramos<br>
+mkdir NombreNuevaCarpeta			<br>
+crea carpeta(directorio), ej. mkdir NuevaCarpeta<br>
+touch NombreArchivoNuevo			<br>
+crea archivo nuevos, p.ej. touch NuevoArchivo.txt<br>
+cat NombreDelArchivo				<br>
+nos permite ver el contenido de un archivo, p.ej. cat NuevoArchivo.txt<br>
+cd						<br>
+nos permite cambiarnos de carpeta, ej. cd c/NuevaCarpeta<br>
+cd .. 						<br>
+regresa al directorio o carpeta superior<br>
+cd o cd ~<br>
+ nos lleva a la ruta del usuario.<br>
+cd /c						<br>
+nos vamos al disco C:/.<br>
+cd -						<br>
+nos lleva directamente al ultimo directorio visitado.<br>
+ls						<br>
+ver los archivos de la carpeta donde estamos actualmente.<br>
+ls -l: 		<br>
+Ver todos los archivos como una lista en donde incluye el usuario, grupo, permisos sobre el archivo, tamaño, fecha y hora de creación.<br>
+ls -lh: 	<br>
+Muestra la misma información que ls-l pero con unidades de tamaño, es decir, kb o mb.<br>
+ls -R: 		<br>
+muestra el contenido de todos los sudirectorios de forma recursiva.<br>
+ls -S 		<br>
+Ordena los resultados por tamaño de archivo.<br>
+rm 						<br>
+Nos permite borrar un archivo o carpeta ej: rm NuevoArchivo.txt<br>
+rmdir nombredeldirectorio/ 			<br>
+borrar un directorio: Solo funciona con directorios vacíos.<br>
+rm -r nombre de la carpeta/ 			<br>
+elimina carpeta y archivos dentro de ella de forma recursiva.<br>
+cp NombreArchivo NombreDelDirectorio		<br>
+copia un archivo.<br>
+mv “el directorio de donde queremos mover/el nombre del archivo” “el directorio hacia donde lo queremos mover” <br>
+nos permite mover un archivo.<br>
+clear 						<br>
+limpiar la pantalla.<br>
+history<br>
+ver los últimos comandos que ejecutamos y un número especial con el que podemos volver a repetir el comando.<br>
+</p>
     </section>
 
   </main>
 
-  <script src="../script.js"></script>
+  
 </body>
 
 </html>
