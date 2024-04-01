@@ -2,448 +2,153 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorial y comandos Git y Github - Fede Iacono</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi portfolio - Fede Iacono</title>
 
-    <meta property="og:title" content="Git y Github - Fede Iacono" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Tutorial y comandos Git y Github" />
-    <meta property="og:image" content="https://fedeiatech.github.io/publics/img/armoured-mon2.gif" />
 
-    <link rel="icon" href="../publics/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="../publics/reset.css" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../publics/modal.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./publics/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="../publics/reset.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="../publics/modal.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <!--NavBar-->
-        <div class="bkg-img">
-            <img src="../publics/img/forest-night1.jpg" alt="Imagen de fondo" id="img-fondo">
-            <nav>
-                <div class="nav-box1">
-                    <ul>
-                        <li><a href="#inicio" onmouseover="playSelect()">Inicio</a></li>
-                        <li>
-                            <a href="#proyectos" onmouseover="playSelect()">Proyectos</a>
-                        </li>
-                        <li>
-                            <a href="#sobre-mi" onmouseover="playSelect()">Sobre mi</a>
-                        </li>
-                        <li>
-                            <a href="#otros-links" onmouseover="playSelect()">links</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-box2">
-                    <img id="sign" src="../publics/img/sign1.png" alt="sign of light" onmouseover="playSelect()"
-                        onclick="playSign()" />
-                </div>
-            </nav>
-        </div>
-        <!--Gradiente-->
-        <div class="bkg-grad"><br /></div>
-    </header>
+  <header>
 
-    <main>
-        <!--Titulo y descripcion de la pag-->
-        <section id="inicio" class="text">
-          <figure id="figure">
-            <img class="cover-img" src="./publics/img/calabozo.gif"
-              alt="Guerrero sentado alrededor de una fogata creada por una espada enterrada en un monticulo de huesos, en lo que parece una mazmorra con ladrillos antiguos decorados">
-            <figcaption>
-              <div class="cover-title">
-                <h1>Mi Portfolio</h1>
-                <h2 class="info">↓ Desliza para comenzar ↓</h2>
-              </div>
-            </figcaption>
-          </figure>
-    
-          <!-- <h1>Bienvenido a mi Portfolio</h1> -->
-          <p>
-            ¡Hola! Soy <strong>Fede Iacono</strong>, y te doy la bienvenida a mi espacio del diseño web y
-            desarrollo de aplicaciones.
+  </header>
+
+  <main>
+    <!--Titulo y descripcion de la pag-->
+    <section id="inicio" class="text">
+
+
+      <!--  -->
+      <h1>----Git Bash----</h1>
+      <h2>Comandos y primeras configuraciones de Git:</h2>
+      <h3>.Configurar nombre de usuario y cuenta afiliada a Github</h3>
+      <p>git config --global user.name "John Doe"</p>
+      <p>git config --global user.email johndoe@example.com</p>
+      <h3>.Configurar para que el access token funcione por tiempo determinado</h3>
+      <p> git config --global credential.helper wincred</p>
+      <h3>.Configurar el tiempo de expiracion, en segundos </h3>
+      <p>git config --global credential.helper 'cache --timeout=1800'</p>
+      <h3>.Configurar git para que se quede esperando a cerrar visual para continuar</h3>
+      <p>git config --global core.editor "code --wait"</p>
+      <h3>.Ver valores de configuración</h3>
+      <p>git config --list</p>
+      <h3>.Ver archivo de configuracion</h3>
+      <p>git config --global -e</p>
+      <h3>.Configurar salto de linea para evitar conflictos</h3>
+      <p>git config --global core.autocrlf true(windows)/input(linux)</p>
+      <h3>.Abrir Visual Studio Code desde la carpeta en la que estemos parados</h3>
+      <p>code .</p>
+      <h3>.limpiar terminal</h3>
+      <p>clear</p>
+
+      <h2>En Visual Studio Code podemos activar la consola</h2>
+      <h3>.Abrir terminal</h3>
+      <p>ctrl + ñ</p>
+      <h3>.Abrir Git bash para usar comandos</h3>
+      <p>boton derecho sobre teminal > Git bash</p>
+
+      <h2>Pasos creacion de repositorio:</h2>
+      <h3>.Crear repositorio en GitHub -url-</h3>
+      <h3>.Crear carpeta</h3>
+      <h3>.Se crean archivos dentro de la carpeta</h3>
+      <h3>.Se ubica dentro de la carpeta y se hace un init</h3>
+      <p>git init</p>
+      <h3>.Se establece el destino remoto de esa carpeta colocando la url del repositorio</h3>
+      <p>git remote add origin -url del repositorio-</p>
+      <p>git remote -v comprueba el repositorio</p>
+      <h3>.Se pueden seguir creando, modificando y eliminando archivos</h3>
+
+      <h2>Pasos para hacer un commit</h2>
+      <h3>.Se crean, modifican o eliminan archivos (Untracked files)</h3>
+      <h3>.Ver cambios hechos antes de usar 'add'</h3>
+      <p>git diff</p>
+      <h3>.Se agregan los archivos nuevos/ cambios realizados (Staged)</h3>
+      <p>git add archivo.txt</p>
+      <h3>o sino para gregar todos los archivos</h3>
+      <p>git add .</p>
+      <br>
+      <h3>.Si queremos quitar un archivo / dejar de tener en cuenta para commitear (Untracked)</h3>
+      <p>git rm --cached file.txt</p>
+      <h3>.Si queremos volver a la ultima modificacion de un estado anterior del archivo</h3>
+      <p>git restore file2.txt</p>
+      <br>
+      <h3>.Luego se realiza un commit para reversionar los archivos (Commit)</h3>
+      <p>git commit -m "nombre de la version" Ej: "se actualizo la informacion del archivo 2"</p>
+      <h3>.ver cambios luego del commit</h3>
+      <p>git log</p>
+      <h3>.para salir</h3>
+      <p>:q</p>
+      <br>
+<h3>.ver cambios del commit en pocas lineas</h3>
+<p>git log --oneline</p>
+<br>
+<h3>.Se suben los archivos al repositorio remoto (Remote) --> debemos haber generado y configurado el repositorio
+      remoto (git init)</h3>
+<p>git push nombreRemoto nombreRama</p>
+<h3>o</h3>
+<p>git push origin master/main</p>
+<h3>o</h3>
+<p>git push -u origin main</p>
+<h3>empuja los documentos al repositorio(-u establece que luego el push no requiera escribir 'origin main' a solo 'main'</h3>
+      
+<h2>.gitignore</h2>
+      
+
+      
+      
+        
+           
+            
+
+          ------------------------------------------------------
+          
+
+          La creacion de este archivo contendra informacion de datos que seran ignorados y evitara subir archivos y
+          carpetas innecesarios
+          *.img, *.mp4
+          .env (carpeta de datos de usuario)
+          node_modules
+
+          .Se debe commitear la carpeta
+
+          ------------------------------------------------------
+          Branches (Ramas)
+
+          .Para saber en que rama estamos parados
+          git branch
+
+          .Para cambiar a una rama nueva y/o crearla
+          git checkout -b ramaNueva
+
+          .Volviendo a la rama principal y mergeamos una rama secundaria (absorberla)
+          git checkout master
+          git merge ramaNueva
+
+          .Fusionar ramas con git merge
+          1. Posicionarse en la rama (Head ->)
+          git switch nombreRama
+          2. comando para absorber nuevos cambios de la rama
+          git merge nombreRama
+          3. Subir cambios
+          git push origin nombreRama
+
+          Otros:
+          git branch -M main establece main como rama principal
           </p>
-          <p>
-            Me especializo en crear soluciones digitales que sean atractivas,
-            fáciles de usar y efectivas.
-          </p>
-          <p>
-            A continuación, encontrarás una selección de mis mejores proyectos, incluyendo sitios
-            web, aplicaciones, y diseños gráficos.
-          </p>
-        </section>
-    
-        <!--Tabla de proyectos-->
-        <section id="proyectos" class="window">
-          <!-- Marco de la ventana -->
-          <div class="window-title">
-            <!-- Titulo -->
-            <div class="t-window">
-              <h2>Mis Proyectos</h2>
-            </div>
-            <!-- SVGs -->
-            <div class="b-window">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false"
-                class="chakra-icon css-9g9lgg" alt="Minimize" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M368.5 240h-225c-8.8 0-16 7.2-16 16 0 4.4 1.8 8.4 4.7 11.3 2.9 2.9 6.9 4.7 11.3 4.7h225c8.8 0 16-7.2 16-16s-7.2-16-16-16z">
-                </path>
-              </svg>
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
-                class="chakra-icon css-9g9lgg" alt="window" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 8H4v8h16v-8zm0-2V5H4v4h16zm-5-3h4v2h-4V6z">
-                  </path>
-                </g>
-              </svg>
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false"
-                class="chakra-icon css-9g9lgg" alt="Close" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z">
-                </path>
-              </svg>
-            </div>
-          </div>
-          <!-- Contenido (Tabla) -->
-          <div class="window-content">
-            <h2 class="info">Presiona el ícono para más información</h2>
-            <table>
-              <tr>
-                <th>Tipo</th>
-                <th>Proyecto</th>
-                <th>Descripción</th>
-              </tr>
-              <tr>
-                <!-- Primer item -->
-                <td class="td-icon" id="td-1">
-                  <!-- Icono -->
-                  <img src="./publics/img/jewel-icon.png" alt="diamond" class="icon" />
-                  <!-- Modal -->
-                  <div class="modal" id="modal-1">
-                    <div class="modal-title">
-                      <!-- Titulo -->
-                      <h2>Info</h2>
-                      <div class="contenido-modal">
-                        <img class="modal-icon" src="./publics/img/jewel-icon.png" alt="diamond icon">
-                        <p>Los contenidos con la propiedad "Diamante" simbolizan una página web con resultados excepcionales
-                        </p>
-                        <p class="more-info">Presiona para cerrar</p>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <!-- Link -->
-                <td>
-                  <a href="./portfolio_01/portfolio_btstrp.html">Web de imágenes generativas</a>
-                </td>
-                <!-- Descripcion -->
-                <td>
-                  <p>Página con uso de Bootstrap</p>
-                </td>
-              </tr>
-              <tr>
-                <!-- Segundo item -->
-                <td class="td-icon" id="td-2">
-                  <!-- Icono -->
-                  <img src="./publics/img/talk-icon.png" alt="shield" class="icon" />
-                  <!-- Modal -->
-                  <div class="modal" id="modal-2">
-                    <div class="modal-title">
-                      <!-- Titulo -->
-                      <h2>Info</h2>
-                      <div class="contenido-modal">
-                        <img class="modal-icon" src="./publics/img/talk-icon.png" alt="talk icon">
-                        <p>Los contenidos con el icono de "Dialogo" representan un acceso a multiples sub-proyectos
-                        </p>
-                        <p class="more-info">Presiona para cerrar</p>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <!-- Link -->
-                <td>
-                  <a href="./Javascript/javascript_index.html">Campo Javascript</a>
-                </td>
-                <!-- Descripcion -->
-                <td>Sección de puro entrenamiento Javascript</td>
-              </tr>
-              <tr>
-                <!-- Tercer item -->
-                <td class="td-icon" id="td-3">
-                  <!-- Icono -->
-                  <img src="./publics/img/shield-icon.png" alt="shield" class="icon" />
-                  <!-- Modal -->
-                  <div class="modal" id="modal-3">
-                    <div class="modal-title">
-                      <!-- Titulo -->
-                      <h2>Info</h2>
-                      <div class="contenido-modal">
-                        <img class="modal-icon" src="./publics/img/shield-icon.png" alt="shield icon">
-                        <p>Los contenidos con un "Escudo" identifica a las páginas experimentales
-                        </p>
-                        <p class="more-info">Presiona para cerrar</p>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <!-- Link -->
-                <td>
-                  <a href="./Practicas HTML/01 Barberia/index.html">Prácticas 1</a>
-                </td>
-                <!-- Descripcion -->
-                <td>Barbería Penélope</td>
-              </tr>
-              <tr>
-                <!-- Cuarto item -->
-                <td class="td-icon" id="td-4">
-                  <!-- Icono -->
-                  <img src="./publics/img/shield-icon.png" alt="shield" class="icon" />
-                  <!-- Modal -->
-                  <div class="modal" id="modal-4">
-                    <div class="modal-title">
-                      <!-- Titulo -->
-                      <h2>Info</h2>
-                      <div class="contenido-modal">
-                        <img class="modal-icon" src="./publics/img/shield-icon.png" alt="shield icon">
-                        <p>Los contenidos con un "Escudo" identifica a las páginas experimentales
-                        </p>
-                        <p class="more-info">Presiona para cerrar</p>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <!-- Link -->
-                <td>
-                  <a href="./Practicas HTML/02 Challenge - Encriptador/index.html">Prácticas 2</a>
-                </td>
-                <!-- Descripcion -->
-                <td>Challenge 1 de Alura - Encriptador</td>
-              </tr>
-              <tr>
-                <!-- Quinto item -->
-                <td class="td-icon" id="td-5">
-                  <!-- Icono -->
-                  <img src="./publics/img/talk-icon.png" alt="talk icon" class="icon" />
-                  <!-- Modal -->
-                  <div class="modal" id="modal-5">
-                    <div class="modal-title">
-                      <!-- Titulo -->
-                      <h2>Info</h2>
-                      <div class="contenido-modal">
-                        <img class="modal-icon" src="./publics/img/talk-icon.png" alt="talk icon">
-                        <p>Los contenidos con el icono de "Dialogo" representan un acceso a multiples sub-proyectos
-                        </p>
-                        <p class="more-info">Presiona para cerrar</p>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <!-- Link -->
-                <td>
-                  <a href="./Programando/index.html">La cueva del programador</a>
-                </td>
-                <!-- Descripcion -->
-                <td>Sitio donde tomo notas de mis aprendizajes</td>
-              </tr>
-            </table>
-    
-            <!-- <h2 class="info">Presiona el ícono para más información</h2> -->
-          </div>
-        </section>
-    
-        <!--Acerca de mi-->
-        <section id="sobre-mi" class="text">
-          <h2>Sobre mi</h2>
-          <div class="texto-imagen">
-            <div>
-              <img class="img-float" src="./publics/img/armoured-mon2.gif" alt="armadura">
-              <p>
-                Cada diseño, cada línea de código, refleja mi constante aprendizaje y búsqueda por incorporar experiencias
-                únicas.
-              </p>
-              <p>
-                Mi programación está en constante evolución, explorando con entusiasmo las posibilidades del desarrollo web.
-                Actualmente, domino con soltura lenguajes como HTML, CSS y JavaScript, siempre
-                dispuesto a ampliar mi aprendizaje.
-              </p>
-              <p>
-                Mi portafolios es un reflejo de mi camino, una bitácora de mis proyectos y habilidades. Diseños creados
-                desde la
-                sencillez, prácticas con tutoriales, mini juegos, y sitios web completos e interactivos, cada uno con
-                su propia historia y desafío.
-              </p>
-            </div>
-          </div>
-        </section>
-    
-        <!--Ficha de personaje-->
-        <section id="character" class="window">
-          <!-- Marco de la ventana -->
-          <div class="window-title">
-            <!-- Titulo -->
-            <div class="t-window">
-              <h2>Ficha de personaje</h2>
-            </div>
-            <!-- SVGs -->
-            <div class="b-window">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false"
-                class="chakra-icon css-9g9lgg" alt="Minimize" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M368.5 240h-225c-8.8 0-16 7.2-16 16 0 4.4 1.8 8.4 4.7 11.3 2.9 2.9 6.9 4.7 11.3 4.7h225c8.8 0 16-7.2 16-16s-7.2-16-16-16z">
-                </path>
-              </svg>
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
-                class="chakra-icon css-9g9lgg" alt="window" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 8H4v8h16v-8zm0-2V5H4v4h16zm-5-3h4v2h-4V6z">
-                  </path>
-                </g>
-              </svg>
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false"
-                class="chakra-icon css-9g9lgg" alt="Close" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z">
-                </path>
-              </svg>
-            </div>
-          </div>
-    
-          <!-- Contenido de la ventana -->
-          <div class="window-content">
-            <!-- Central -->
-            <p>Tipo: Fullstack developer</p>
-            <!-- Fichas tipo tabla -->
-            <table id="tarjeta-personaje">
-              <tr>
-                <!-- Titulo izquierdo -->
-                <th>Front</th>
-                <!-- Titulo derecho-->
-                <th>Back</th>
-              </tr>
-              <tr>
-                <!-- Contenido Izquierdo (Fontend) -->
-                <td class="td-front">
-                  <!-- Imagen animada(izq) -->
-                  <div class="character-icons">
-                    <img src="./publics/img/running.gif" alt="warrior character with cape running, animated gif"
-                      id="img-char" />
-                    <!--Columna de buffs(der) -4 items- -->
-                    <div class="columna-buff">
-                      <div class="buff1">
-                        <img class="img-buff" src="./publics/img/react-icon.png" alt="React icon"
-                          onmouseover="playSelect()" />
-                        <p>React</p>
-                      </div>
-                      <div class="buff2">
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                      </div>
-                      <div class="buff3">
-                        <img class="img-buff" src="./publics/img/icon-bootstrap.png" alt="Bootstrap" />
-                        <p>Bootstrap</p>
-                        <br>
-                      </div>
-                      <div class="buff3">
-                        <img class="img-buff" src="./publics/img/icon-jquery.png" alt="JQuery" />
-                        <p>JQuery</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!--Fila de habilidades -3 items- -->
-                  <div class="skill-icons">
-                    <div class="sk1">
-                      <img id="img-skll" src="./publics/img/skill-html.png" alt="HTML5 icon" />
-                      <p>HTML</p>
-                    </div>
-                    <div class="sk2">
-                      <img id="img-skll" src="./publics/img/skill-css.png" alt="CSS3 icon" />
-                      <p>CSS</p>
-                    </div>
-                    <div class="sk3">
-                      <img id="img-skll" src="./publics/img/skill-js.png" alt="JS icon" />
-                      <p>Javascript</p>
-                    </div>
-                  </div>
-                  <!--Descripcion de Potenciadores-->
-                  <div class="poten">
-                    <h3>Clase: Diseñador gráfico</h3>
-                    <p>.</p>
-                    <h3>Potenciadores de clase:</h3>
-                    <ul>
-                      <li>Gráfico + + + + +</li>
-                      <li>Responsive + + + +</li>
-                      <li>Multimedia + + +</li>
-                    </ul>
-                  </div>
-                </td>
-                <!--Contenido derecho (Backend) -->
-                <td class="td-back">
-                  <div class="conocimientos">
-                    <h3>Conocimientos</h3>
-                    <h4>Lenguajes</h4>
-                    <ul>
-                      <li>Lógica *****</li>
-                      <li>Java ****</li>
-                      <li>Pyton ***</li>
-                    </ul>
-                    <h4>BBDD</h4>
-                    <ul>
-                      <li>MySQL *****</li>
-                      <li>Mongo DB ***</li>
-                      <li>Maria DB ****</li>
-                    </ul>
-                    <h4>Frameworks</h4>
-                    <ul>
-                      <li>Spring *****</li>
-                    </ul>
-                  </div>
-                  <div class="habilidades">
-                    <h4>Habilidades</h4>
-                    <ul>
-                      <li>Seguridad Web</li>
-                      <li>Optimización de código</li>
-                      <li>Organización</li>
-                    </ul>
-                  </div>
-                  <p></p>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </section>
-    
-        <!--Links-->
-    
-        <section id="otros-links" class="text">
-          <h2>Contacto</h2>
-          <form id="contact-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" placeholder="Ingrese un nombre" autocomplete="given-name" required />
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Ingrese un email" autocomplete="off" required />
-    
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" placeholder="Ingrese su mensaje"></textarea>
-    
-            <button id="enviar" type="submit">Enviar</button>
-          </form>
-        </section>
-      </main>
-    
-      <script src="../script.js"></script>
-    </body>
-    
-    </html>
+          <img src="./img/armor.png">
+    </section>
+
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
