@@ -14,7 +14,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -27,167 +29,260 @@
     <section id="inicio" class="text">
 
 
-      <!--  -->
-      <h1>----Git Bash----</h1>
-      <h2>Comandos y primeras configuraciones de Git:</h2>
-      <h3>.Configurar nombre de usuario y cuenta afiliada a Github</h3>
-      <p>git config --global user.name "John Doe"</p>
-      <p>git config --global user.email johndoe@example.com</p>
-      <h3>.Configurar para que el access token funcione por tiempo determinado</h3>
-      <p> git config --global credential.helper wincred</p>
-      <h3>.Configurar el tiempo de expiracion, en segundos </h3>
-      <p>git config --global credential.helper 'cache --timeout=1800'</p>
-      <h3>.Configurar git para que se quede esperando a cerrar visual para continuar</h3>
-      <p>git config --global core.editor "code --wait"</p>
-      <h3>.Ver valores de configuración</h3>
-      <p>git config --list</p>
-      <h3>.Ver archivo de configuracion</h3>
-      <p>git config --global -e</p>
-      <h3>.Configurar salto de linea para evitar conflictos</h3>
-      <p>git config --global core.autocrlf true(windows)/input(linux)</p>
-      <h3>.Abrir Visual Studio Code desde la carpeta en la que estemos parados</h3>
-      <p>code .</p>
-      <h3>.limpiar terminal</h3>
-      <p>clear</p>
-      <br>
+      <!-- Titulo -->
+      <div>
+        <h1>----Git Bash----</h1>
+        <a href="../index.html">Volver</a>
+      </div>
 
-      <h2>En Visual Studio Code podemos activar la consola...</h2>
-      <h3>.Abrir terminal</h3>
-      <p>ctrl + ñ</p>
-      <h3>.Abrir Git bash para usar comandos</h3>
-      <p>boton derecho sobre teminal > Git bash</p>
-      <br>
-      <h2>Pasos creacion de repositorio:</h2>
-      <h3>.Crear repositorio en GitHub -url-</h3>
-      <h3>.Crear carpeta</h3>
-      <h3>.Se crean archivos dentro de la carpeta</h3>
-      <h3>.Se ubica dentro de la carpeta y se hace un init</h3>
-      <p>git init</p>
-      <h3>.Se establece el destino remoto de esa carpeta colocando la url del repositorio</h3>
-      <p>git remote add origin -url del repositorio-</p>
-      <p>git remote -v comprueba el repositorio</p>
-      <h3>.Se pueden seguir creando, modificando y eliminando archivos</h3>
-      <br>
+      <div>
+        <h2>Características</h2>
+        <h3>Los sistemas de control de versiones como Git permiten a usuarios y equipos:</h3>
+        <ul>
+          <li>Crear versiones de un proyecto.</li>
+          <li>Realizar el seguimiento de los cambios y resolver conflictos.</li>
+          <li>Fusionar cambios de varias fuentes en una versión común.</li>
+          <li>Deshacer cambios en archivos seleccionados o en un proyecto completo.</li>
+          <li>Acceder a versiones históricas de un proyecto para comparar los cambios a lo largo del tiempo.</li>
+          <li>Ver quién modificó por última vez algo que podría estar causando un problema.</li>
+          <li>Crear una copia de seguridad segura de un proyecto.</li>
+          <li>Use múltiples máquinas para trabajar en un proyecto y mucho más.</li>
+        </ul>
+      </div>
 
-      <h2>Pasos para hacer un commit</h2>
-      <h3>.Se crean, modifican o eliminan archivos (Untracked files)</h3>
-      <h3>.Ver cambios hechos antes de usar 'add'</h3>
-      <p>git diff</p>
-      <h3>.Se agregan los archivos nuevos/ cambios realizados (Staged)</h3>
-      <p>git add archivo.txt</p>
-      <h3>o sino para gregar todos los archivos</h3>
-      <p>git add .</p>
-      <br>
+      <div>
+        <h2>Conceptos básicos</h2>
+        <h3>
+          <u>Repositorio:</u> es el directorio donde se almacenan los archivos del proyecto y el historial de los cambios
+          realizados. Puede estar en un servidor remoto como GitHub o GitLab o en un directorio local. Puede contener
+          archivos de código, imágenes, audios o todo lo relacionado con el proyecto.
+        </h3>
+        <h3>
+          <u>Commit:</u> es el conjunto de los cambios (changeset) realizados en uno o varios archivos del proyecto que se
+          confirman en el repositorio con un mensaje descriptivo y un autor. Cada confirmación es una instantánea del
+          proyecto que no podrá ser modificada a no ser que se indique expresamente.
+        </h3>
+        <h3>
+          <u>Rama:</u> es un puntero a una de las instantáneas del repositorio. Proporciona una línea independiente de
+          desarrollo con su propia historia de commits sin alterar los archivos de otras ramas. Suelen usarse para
+          implementar nuevas funcionalidades sin afectar a la versión estable o rama principal (main branch) del
+          proyecto.
+        </h3>
+        <h3>
+          <u>Conflicto:</u> sucede cuando se fusionan dos ramas que incluyen modificaciones en los mismos trozos de un
+          fichero y Git no es capaz de elegir cuáles aplicar, requiriendo la intervención del usuario.
+        </h3>
+        <h3>
+          <u>HEAD:</u> también es un puntero, apunta al último commit de la actual rama de trabajo, salvo que se haya movido
+          expresamente a una instantánea anterior.
+        </h3>
+        <h3>
+          <u>Etiquetas:</u> son punteros «con nombre» que apuntan a una instantánea concreta del historial de cambios. Suelen
+          usarse para identificar las sucesivas versiones del proyecto.
+        </h3>
+      </div>
 
-      <h3>.Si queremos quitar un archivo / dejar de tener en cuenta para commitear (Untracked)</h3>
-      <p>git rm --cached file.txt</p>
-      <h3>.Si queremos volver a la ultima modificacion de un estado anterior del archivo</h3>
-      <p>git restore file2.txt</p>
-      <br>
+      <div>
+        <h2>Áreas de Git</h2>
+        <h3><u>Área de trabajo:</u> es el directorio de nuestro proyecto con el estado actual de los ficheros que podemos
+          visualizar desde el explorador de archivos. Se inicializa con el comando init.
+        </h3>
+        <h3><u>Área de preparación:</u> donde añadir los archivos que van a conformar un commit. Pueden ser ficheros completos
+          o sólo partes concretas. Los archivos se añaden con el comando add.
+        </h3>
+        <h3><u>Repositorio local:</u> donde guardar cada commit a partir de los archivos añadidos al área de preparación. La
+          información se guarda por defecto en el directorio .git del área de trabajo.
+        </h3>
+        <h3><u>Repositorio remoto</u> puede ser uno (por defecto se llama origin), o puede haber varios. Entre el repositorio
+          local y los remotos se puede usar el comando push para enviar los cambios realizados localmente, o pull para
+          descargar los últimos cambios disponibles.
+        </h3>
+        <img src="./img/Areas_Git.jpg" alt="Areas de git">
+      </div>
 
-      <h3>.Luego se realiza un commit para reversionar los archivos (Commit)</h3>
-      <p>git commit -m "nombre de la version" Ej: "se actualizo la informacion del archivo 2"</p>
-      <h3>.ver cambios luego del commit</h3>
-      <p>git log</p>
-      <h3>.para salir</h3>
-      <p>:q</p>
-      <br>
-      <h3>.ver cambios del commit en pocas lineas</h3>
-      <p>git log --oneline</p>
-      <br>
+      <div>
+        <h2>Comandos y primeras configuraciones de Git:</h2>
+        <h3>.Configurar nombre de usuario y cuenta afiliada a Github</h3>
+        <p>git config --global user.name "John Doe"</p>
+        <p>git config --global user.email johndoe@example.com</p>
+        <h3>.Configurar para que el access token funcione por tiempo determinado</h3>
+        <p> git config --global credential.helper wincred</p>
+        <h3>.Configurar el tiempo de expiracion, en segundos </h3>
+        <p>git config --global credential.helper 'cache --timeout=1800'</p>
+        <h3>.Configurar git para que se quede esperando a cerrar visual para continuar</h3>
+        <p>git config --global core.editor "code --wait"</p>
+        <h3>.Ver valores de configuración</h3>
+        <p>git config --list</p>
+        <h3>.Ver archivo de configuracion</h3>
+        <p>git config --global -e</p>
+        <h3>.Configurar salto de linea para evitar conflictos</h3>
+        <p>git config --global core.autocrlf true(windows)/input(linux)</p>
+        <h3>.Abrir Visual Studio Code desde la carpeta en la que estemos parados</h3>
+        <p>code .</p>
+        <h3>.limpiar terminal</h3>
+        <p>clear</p>
+        <br>
+      </div>
 
-      <h3>.Se suben los archivos al repositorio remoto (Remote) --> debemos haber generado y configurado el repositorio
-        remoto (git init)</h3>
-      <p>git push nombreRemoto nombreRama</p>
-      <h3>o</h3>
-      <p>git push origin master/main</p>
-      <h3>o</h3>
-      <p>git push -u origin main</p>
-      <h3>empuja los documentos al repositorio(-u establece que luego el push no requiera escribir 'origin main' a solo
-        'main'</h3>
-      <br>
+      <div>
+        <h2>En Visual Studio Code podemos activar la consola...</h2>
+        <h3>.Abrir terminal</h3>
+        <p>ctrl + ñ</p>
+        <h3>.Abrir Git bash para usar comandos</h3>
+        <p>boton derecho sobre teminal > Git bash</p>
+        <br>
+      </div>
 
-      <h2>.gitignore</h2>
-      <h3>La creacion de este archivo contendra informacion de datos que seran ignorados y evitara subir archivos y
-        carpetas innecesarios</h3>
-      <h3>*.img, *.mp4</h3>
-      <h3>.env (carpeta de datos de usuario)</h3>
-      <h3>node_modules</h3>
-      <br>
-      <h3>.Se debe commitear la carpeta</h3>
-      <br>
+      <div>
+        <h2>Pasos en la creación de un repositorio:</h2>
+        <h3>.Crear repositorio en GitHub -url-</h3>
+        <h3>.Crear carpeta</h3>
+        <h3>.Se crean archivos dentro de la carpeta</h3>
+        <h3>.Se ubica dentro de la carpeta y se hace un init</h3>
+        <p>git init</p>
+        <h3>.Se establece el destino remoto de esa carpeta colocando la url del repositorio</h3>
+        <p>git remote add origin -url del repositorio-</p>
+        <p>git remote -v comprueba el repositorio</p>
+        <h3>.Se pueden seguir creando, modificando y eliminando archivos</h3>
+        <br>
+      </div>
 
-      <h2>Branches (Ramas)</h2>
-      <h3>.Para saber en que rama estamos parados</h3>
-      <p>git branch</p>
-      <h3>.Para cambiar a una rama nueva y/o crearla</h3>
-      <p>git checkout -b ramaNueva</p>
-      <h3>.Volviendo a la rama principal y mergeamos una rama secundaria (absorberla)</h3>
-      <p>git checkout master</p>
-      <p>git merge ramaNueva</p>
+      <div>
+        <h2>Pasos para hacer un commit</h2>
+        <h3>.Se crean, modifican o eliminan archivos (Untracked files)</h3>
+        <h3>.Ver cambios hechos antes de usar 'add'</h3>
+        <p>git diff</p>
+        <h3>.Se agregan los archivos nuevos/ cambios realizados (Staged)</h3>
+        <p>git add archivo.txt</p>
+        <h3>o sino para gregar todos los archivos</h3>
+        <p>git add .</p>
+        <br>
+      </div>
 
-      <br>
-      <h3>.Fusionar ramas con git merge</h3>
-      <h3>1. Posicionarse en la rama (Head ->)</h3>
-      <p>git switch nombreRama</p>
-      <h3>2. comando para absorber nuevos cambios de la rama</h3>
-      <p>git merge nombreRama</p>
-      <h3>3. Subir cambios</h3>
-      <p>git push origin nombreRama</p>
-      <br>
-      <h3>Otros:</h3>
-      <p>git branch -M main establece main como rama principal</p>
-      <br>
+      <div>
+        <h3>.Si queremos quitar un archivo / dejar de tener en cuenta para commitear (Untracked)</h3>
+        <p>git rm --cached file.txt</p>
+        <h3>.Si queremos volver a la ultima modificacion de un estado anterior del archivo</h3>
+        <p>git restore file2.txt</p>
+        <br>
+      </div>
 
-      <p>
-      <h2>Glosario Consola</h2> <br>
-      <br>
-      pwd <br>
-      muestra la carpeta actual en la que nos encontramos<br>
-      mkdir NombreNuevaCarpeta <br>
-      crea carpeta(directorio), ej. mkdir NuevaCarpeta<br>
-      touch NombreArchivoNuevo <br>
-      crea archivo nuevos, p.ej. touch NuevoArchivo.txt<br>
-      cat NombreDelArchivo <br>
-      nos permite ver el contenido de un archivo, p.ej. cat NuevoArchivo.txt<br>
-      cd <br>
-      nos permite cambiarnos de carpeta, ej. cd c/NuevaCarpeta<br>
-      cd .. <br>
-      regresa al directorio o carpeta superior<br>
-      cd o cd ~<br>
-      nos lleva a la ruta del usuario.<br>
-      cd /c <br>
-      nos vamos al disco C:/.<br>
-      cd - <br>
-      nos lleva directamente al ultimo directorio visitado.<br>
-      ls <br>
-      ver los archivos de la carpeta donde estamos actualmente.<br>
-      ls -l: <br>
-      Ver todos los archivos como una lista en donde incluye el usuario, grupo, permisos sobre el archivo, tamaño, fecha
-      y hora de creación.<br>
-      ls -lh: <br>
-      Muestra la misma información que ls-l pero con unidades de tamaño, es decir, kb o mb.<br>
-      ls -R: <br>
-      muestra el contenido de todos los sudirectorios de forma recursiva.<br>
-      ls -S <br>
-      Ordena los resultados por tamaño de archivo.<br>
-      rm <br>
-      Nos permite borrar un archivo o carpeta ej: rm NuevoArchivo.txt<br>
-      rmdir nombredeldirectorio/ <br>
-      borrar un directorio: Solo funciona con directorios vacíos.<br>
-      rm -r nombre de la carpeta/ <br>
-      elimina carpeta y archivos dentro de ella de forma recursiva.<br>
-      cp NombreArchivo NombreDelDirectorio <br>
-      copia un archivo.<br>
-      mv “el directorio de donde queremos mover/el nombre del archivo” “el directorio hacia donde lo queremos mover”
-      <br>
-      nos permite mover un archivo.<br>
-      clear <br>
-      limpiar la pantalla.<br>
-      history<br>
-      ver los últimos comandos que ejecutamos y un número especial con el que podemos volver a repetir el comando.<br>
-      </p>
-    </section>
+      <div>
+        <h3>.Luego se realiza un commit para reversionar los archivos (Commit)</h3>
+        <p>git commit -m "nombre de la version" Ej: "se actualizo la informacion del archivo 2"</p>
+        <h3>.ver cambios luego del commit</h3>
+        <p>git log</p>
+        <h3>.para salir</h3>
+        <p>:q</p>
+        <br>
+        <h3>.ver cambios del commit en pocas lineas</h3>
+        <p>git log --oneline</p>
+        <br>
+      </div>
+
+      <div>
+        <h3>.Se suben los archivos al repositorio remoto (Remote) - debemos haber generado y configurado el
+          repositorio
+          remoto (git init)</h3>
+        <p>git push nombreRemoto nombreRama</p>
+        <h3>o</h3>
+        <p>git push origin master/main</p>
+        <h3>o</h3>
+        <p>git push -u origin main</p>
+        <h3>empuja los documentos al repositorio (-u establece que luego el push no requiera escribir 'origin main' a
+          solo 'main')</h3>
+        <br>
+      </div>
+
+      <div>
+        <h2>.gitignore</h2>
+        <h3>La creacion de este archivo contendra informacion de datos que seran ignorados y evitara subir archivos y
+          carpetas innecesarios</h3>
+        <h3>*.img, *.mp4</h3>
+        <h3>.env (carpeta de datos de usuario)</h3>
+        <h3>node_modules</h3>
+        <br>
+        <h3>.Se debe commitear la carpeta</h3>
+        <br>
+      </div>
+
+      <div>
+        <h2>Branches (Ramas)</h2>
+        <img src="./img/branches.png" alt="branches">
+        <h3>.Para saber en que rama estamos parados</h3>
+        <p>git branch</p>
+        <h3>.Para cambiar a una rama nueva y/o crearla</h3>
+        <p>git checkout -b ramaNueva</p>
+        <h3>.Volviendo a la rama principal y mergeamos una rama secundaria (absorberla)</h3>
+        <p>git checkout master</p>
+        <p>git merge ramaNueva</p><br>
+      </div>
+
+      <div>
+        <h3>.Fusionar ramas con git merge</h3>
+        <h3>1. Posicionarse en la rama (Head ->)</h3>
+        <p>git switch nombreRama</p>
+        <h3>2. comando para absorber nuevos cambios de la rama</h3>
+        <p>git merge nombreRama</p>
+        <h3>3. Subir cambios</h3>
+        <p>git push origin nombreRama</p>
+        <br>
+        <h3>Otros:</h3>
+        <p>git branch -M main establece main como rama principal</p>
+        <br>
+      </div>
+
+      <div>
+        <p>
+        <h2>Glosario Consola</h2> <br>
+        <br>
+        pwd <br>
+        muestra la carpeta actual en la que nos encontramos<br>
+        mkdir NombreNuevaCarpeta <br>
+        crea carpeta(directorio), ej. mkdir NuevaCarpeta<br>
+        touch NombreArchivoNuevo <br>
+        crea archivo nuevos, p.ej. touch NuevoArchivo.txt<br>
+        cat NombreDelArchivo <br>
+        nos permite ver el contenido de un archivo, p.ej. cat NuevoArchivo.txt<br>
+        cd <br>
+        nos permite cambiarnos de carpeta, ej. cd c/NuevaCarpeta<br>
+        cd .. <br>
+        regresa al directorio o carpeta superior<br>
+        cd o cd ~<br>
+        nos lleva a la ruta del usuario.<br>
+        cd /c <br>
+        nos vamos al disco C:/.<br>
+        cd - <br>
+        nos lleva directamente al ultimo directorio visitado.<br>
+        ls <br>
+        ver los archivos de la carpeta donde estamos actualmente.<br>
+        ls -l: <br>
+        Ver todos los archivos como una lista en donde incluye el usuario, grupo, permisos sobre el archivo, tamaño,
+        fecha
+        y hora de creación.<br>
+        ls -lh: <br>
+        Muestra la misma información que ls-l pero con unidades de tamaño, es decir, kb o mb.<br>
+        ls -R: <br>
+        muestra el contenido de todos los sudirectorios de forma recursiva.<br>
+        ls -S <br>
+        Ordena los resultados por tamaño de archivo.<br>
+        rm <br>
+        Nos permite borrar un archivo o carpeta ej: rm NuevoArchivo.txt<br>
+        rmdir nombredeldirectorio/ <br>
+        borrar un directorio: Solo funciona con directorios vacíos.<br>
+        rm -r nombre de la carpeta/ <br>
+        elimina carpeta y archivos dentro de ella de forma recursiva.<br>
+        cp NombreArchivo NombreDelDirectorio <br>
+        copia un archivo.<br>
+        mv “el directorio de donde queremos mover/el nombre del archivo” “el directorio hacia donde lo queremos mover”
+        <br>
+        nos permite mover un archivo.<br>
+        clear <br>
+        limpiar la pantalla.<br>
+        history<br>
+        ver los últimos comandos que ejecutamos y un número especial con el que podemos volver a repetir el comando.<br>
+        </p>
+      </div>
 
   </main>
 
