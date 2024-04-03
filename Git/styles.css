@@ -22,6 +22,10 @@ main .text a{
   background-color: rgba(112, 112, 112, 0.5);
 }
 
+.title p{
+  text-align: center;
+}
+
 .text div{
   padding: 0 0 3vw 0;
 }
@@ -47,7 +51,7 @@ h2 {
 h3{
   font-size: 3vw;
   line-height: 4vw;
-  padding: 0 0 2vw 0;
+  padding: 2.5vw 0 2vw 0;
 }
 
 .text ul{
@@ -59,7 +63,6 @@ h3{
 
 .text p {
   font-family: "Reddit Mono", monospace;;
-  margin-bottom: 20px;
   padding-left: 2vw;
   line-height: 1.5;
   font-size: 2vw;
@@ -69,6 +72,25 @@ h3{
   width: 100%;
 }
 
+footer{
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+footer .icons{
+  display: flex;
+  align-self: center;
+  justify-content: space-around ;
+  width: 30%;
+  margin: auto;
+  padding: 0 0 1vw 0;
+}
+
+.icons img{
+  width: 3vw;
+}
 
 /*--------------------------*/
 /* Modo claro/oscuro */

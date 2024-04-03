@@ -30,8 +30,9 @@
 
 
       <!-- Titulo -->
-      <div>
+      <div class="title">
         <h1>----Git Bash----</h1>
+        <p>Última actualización: 03-Abr-2024</p>
         <a href="../index.html">Volver</a>
       </div>
 
@@ -53,12 +54,14 @@
       <div>
         <h2>Conceptos básicos</h2>
         <h3>
-          <u>Repositorio:</u> es el directorio donde se almacenan los archivos del proyecto y el historial de los cambios
+          <u>Repositorio:</u> es el directorio donde se almacenan los archivos del proyecto y el historial de los
+          cambios
           realizados. Puede estar en un servidor remoto como GitHub o GitLab o en un directorio local. Puede contener
           archivos de código, imágenes, audios o todo lo relacionado con el proyecto.
         </h3>
         <h3>
-          <u>Commit:</u> es el conjunto de los cambios (changeset) realizados en uno o varios archivos del proyecto que se
+          <u>Commit:</u> es el conjunto de los cambios (changeset) realizados en uno o varios archivos del proyecto que
+          se
           confirman en el repositorio con un mensaje descriptivo y un autor. Cada confirmación es una instantánea del
           proyecto que no podrá ser modificada a no ser que se indique expresamente.
         </h3>
@@ -73,27 +76,33 @@
           fichero y Git no es capaz de elegir cuáles aplicar, requiriendo la intervención del usuario.
         </h3>
         <h3>
-          <u>HEAD:</u> también es un puntero, apunta al último commit de la actual rama de trabajo, salvo que se haya movido
+          <u>HEAD:</u> también es un puntero, apunta al último commit de la actual rama de trabajo, salvo que se haya
+          movido
           expresamente a una instantánea anterior.
         </h3>
         <h3>
-          <u>Etiquetas:</u> son punteros «con nombre» que apuntan a una instantánea concreta del historial de cambios. Suelen
+          <u>Etiquetas:</u> son punteros «con nombre» que apuntan a una instantánea concreta del historial de cambios.
+          Suelen
           usarse para identificar las sucesivas versiones del proyecto.
         </h3>
       </div>
 
       <div>
         <h2>Áreas de Git</h2>
-        <h3><u>Área de trabajo:</u> es el directorio de nuestro proyecto con el estado actual de los ficheros que podemos
+        <h3><u>Área de trabajo:</u> es el directorio de nuestro proyecto con el estado actual de los ficheros que
+          podemos
           visualizar desde el explorador de archivos. Se inicializa con el comando init.
         </h3>
-        <h3><u>Área de preparación:</u> donde añadir los archivos que van a conformar un commit. Pueden ser ficheros completos
+        <h3><u>Área de preparación:</u> donde añadir los archivos que van a conformar un commit. Pueden ser ficheros
+          completos
           o sólo partes concretas. Los archivos se añaden con el comando add.
         </h3>
-        <h3><u>Repositorio local:</u> donde guardar cada commit a partir de los archivos añadidos al área de preparación. La
+        <h3><u>Repositorio local:</u> donde guardar cada commit a partir de los archivos añadidos al área de
+          preparación. La
           información se guarda por defecto en el directorio .git del área de trabajo.
         </h3>
-        <h3><u>Repositorio remoto</u> puede ser uno (por defecto se llama origin), o puede haber varios. Entre el repositorio
+        <h3><u>Repositorio remoto</u> puede ser uno (por defecto se llama origin), o puede haber varios. Entre el
+          repositorio
           local y los remotos se puede usar el comando push para enviar los cambios realizados localmente, o pull para
           descargar los últimos cambios disponibles.
         </h3>
@@ -233,59 +242,89 @@
       </div>
 
       <div>
-        <p>
-        <h2>Glosario Consola</h2> <br>
+        <h2>Glosario Consola (comando - descripcion)</h2>
+
+        <p>pwd </p>
+        <h3>.muestra la carpeta actual en la que nos encontramos</h3>
         <br>
-        pwd <br>
-        muestra la carpeta actual en la que nos encontramos<br>
-        mkdir NombreNuevaCarpeta <br>
-        crea carpeta(directorio), ej. mkdir NuevaCarpeta<br>
-        touch NombreArchivoNuevo <br>
-        crea archivo nuevos, p.ej. touch NuevoArchivo.txt<br>
-        cat NombreDelArchivo <br>
-        nos permite ver el contenido de un archivo, p.ej. cat NuevoArchivo.txt<br>
-        cd <br>
-        nos permite cambiarnos de carpeta, ej. cd c/NuevaCarpeta<br>
-        cd .. <br>
-        regresa al directorio o carpeta superior<br>
-        cd o cd ~<br>
-        nos lleva a la ruta del usuario.<br>
-        cd /c <br>
-        nos vamos al disco C:/.<br>
-        cd - <br>
-        nos lleva directamente al ultimo directorio visitado.<br>
-        ls <br>
-        ver los archivos de la carpeta donde estamos actualmente.<br>
-        ls -l: <br>
-        Ver todos los archivos como una lista en donde incluye el usuario, grupo, permisos sobre el archivo, tamaño,
-        fecha
-        y hora de creación.<br>
-        ls -lh: <br>
-        Muestra la misma información que ls-l pero con unidades de tamaño, es decir, kb o mb.<br>
-        ls -R: <br>
-        muestra el contenido de todos los sudirectorios de forma recursiva.<br>
-        ls -S <br>
-        Ordena los resultados por tamaño de archivo.<br>
-        rm <br>
-        Nos permite borrar un archivo o carpeta ej: rm NuevoArchivo.txt<br>
-        rmdir nombredeldirectorio/ <br>
-        borrar un directorio: Solo funciona con directorios vacíos.<br>
-        rm -r nombre de la carpeta/ <br>
-        elimina carpeta y archivos dentro de ella de forma recursiva.<br>
-        cp NombreArchivo NombreDelDirectorio <br>
-        copia un archivo.<br>
-        mv “el directorio de donde queremos mover/el nombre del archivo” “el directorio hacia donde lo queremos mover”
+        <p>mkdir NombreNuevaCarpeta </p>
+        <h3>.crea carpeta(directorio), ej. mkdir NuevaCarpeta</h3>
         <br>
-        nos permite mover un archivo.<br>
-        clear <br>
-        limpiar la pantalla.<br>
-        history<br>
-        ver los últimos comandos que ejecutamos y un número especial con el que podemos volver a repetir el comando.<br>
+        <p>touch NombreArchivoNuevo </p>
+        <h3>.crea archivo nuevos, p.ej. touch NuevoArchivo.txt</h3>
+        <br>
+        <p>cat NombreDelArchivo </p>
+        <h3>.nos permite ver el contenido de un archivo, p.ej. cat NuevoArchivo.txt</h3>
+        <br>
+        <p>cd </p>
+        <h3>.nos permite cambiarnos de carpeta, ej. cd c/NuevaCarpeta</h3>
+        <br>
+        <p>cd .. </p>
+        <h3>.regresa al directorio o carpeta superior</h3>
+        <br>
+        <p>cd o cd ~</p>
+        <h3>.nos lleva a la ruta del usuario.</h3>
+        <br>
+        <p>cd /c </p>
+        <h3>.nos vamos al disco C:/.</h3>
+        <br>
+        <p>cd - </p>
+        <h3>.nos lleva directamente al ultimo directorio visitado.</h3>
+        <br>
+        <p>ls </p>
+        <h3>.ver los archivos de la carpeta donde estamos actualmente.</h3>
+        <br>
+        <p>ls -l:</p>
+        <h3>.Ver todos los archivos como una lista en donde incluye el usuario, grupo, permisos sobre el archivo,
+          tamaño, fecha y hora de creación.</h3>
+        <br>
+        <p>ls -lh:</p>
+        <h3>.Muestra la misma información que ls-l pero con unidades de tamaño, es decir, kb o mb.</h3>
+        <br>
+        <p>ls -R:</p>
+        <h3>.muestra el contenido de todos los sudirectorios de forma recursiva.</h3>
+        <br>
+        <p>ls -S</p>
+        <h3>.Ordena los resultados por tamaño de archivo.</h3>
+        <br>
+        <p>rm </p>
+        <h3>.Nos permite borrar un archivo o carpeta ej: rm NuevoArchivo.txt</h3>
+        <br>
+        <p>rmdir nombreDelDirectorio/</p>
+        <h3>.borrar un directorio: Solo funciona con directorios vacíos.</h3>
+        <br>
+        <p>rm -r nombre de la carpeta/</p>
+        <h3>.elimina carpeta y archivos dentro de ella de forma recursiva.</h3>
+        <br>
+        <p>cp NombreArchivo NombreDelDirectorio
         </p>
+        <h3>.copia un archivo.</h3>
+        <br>
+        <p>mv “el directorio de donde queremos mover/el nombre del archivo” “el directorio hacia donde lo queremos
+          mover”
+        </p>
+        <h3>.nos permite mover un archivo.</h3>
+        <br>
+        <p>clear</p>
+        <h3>.limpiar la pantalla.</h3>
+        <br>
+        <p>history</p>
+        <h3>.ver los últimos comandos que ejecutamos y un número especial con el que podemos volver a repetir el
+          comando.</h3>
       </div>
 
   </main>
 
+  <footer>
+    <h2>Links</h2>
+    <div class="icons">
+      <a href="../index.html"><img src="./img/icons/home.png" alt="home"></a>
+      <a href="https://github.com/FedeiaTech"><img src="./img/icons/github.png" alt="Github"></a>
+      <a href="https://linktr.ee/fedeiaco"><img src="./img/icons/links.png" alt="links"></a>
+    </div>
+
+    Fede Iacono - Git & GitHub © 2024
+  </footer>
 
 </body>
 
