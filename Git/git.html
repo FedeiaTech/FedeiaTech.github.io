@@ -27,17 +27,33 @@
   <main>
     <!--Titulo y descripcion de la pag-->
     <section id="inicio" class="text">
-
-
-      <!-- Titulo -->
       <div class="title">
         <h1>----Git Bash----</h1>
         <p>Última actualización: 03-Abr-2024</p>
         <a href="../index.html">Volver</a>
       </div>
+    </section>
 
-      <!-- Contenido -->
-      <div>
+    <!-- Indice -->
+    <section class="indice">
+      <h3>Indice</h3>
+      <a href="#caracter">Características</a>
+      <a href="#conceptos">Conceptos básicos</a>
+      <a href="#areasGit">Áreas de Git</a>
+      <a href="#primerasConfig">Comandos y primeras configuraciones de Git</a>
+      <a href="#activarConsola">Activar la consola</a>
+      <a href="#creacionRepo">Creacion de un repositorio</a>
+      <a href="#pasosCommit">Pasos para hacer un Commit</a>
+      <a href="#gitIgnore">.gitignore</a>
+      <a href="#branches">Branches (Ramas)</a>
+      <a href="#flujoTrabajo">Flujos de trabajo con Git</a>
+      <a href="#fusionarRamas">Fusion de ramas</a>
+      <a href="#glosario">Glosario de comandos</a>
+    </section>
+
+    <!-- Contenido -->
+    <section id="content" class="text">
+      <div id="caracter">
         <h2>Características</h2>
         <h3>Los sistemas de control de versiones como Git permiten a usuarios y equipos:</h3>
         <ul>
@@ -52,7 +68,7 @@
         </ul>
       </div>
 
-      <div>
+      <div id="conceptos">
         <h2>Conceptos básicos</h2>
         <h3>
           <u>Repositorio:</u> es el directorio donde se almacenan los archivos del proyecto y el historial de los
@@ -88,7 +104,7 @@
         </h3>
       </div>
 
-      <div>
+      <div id="areasGit">
         <h2>Áreas de Git</h2>
         <h3><u>Área de trabajo:</u> es el directorio de nuestro proyecto con el estado actual de los ficheros que
           podemos
@@ -110,7 +126,7 @@
         <img src="./img/Areas_Git.jpg" alt="Areas de git">
       </div>
 
-      <div>
+      <div id="primerasConfig">
         <h2>Comandos y primeras configuraciones de Git:</h2>
         <h3>.Configurar nombre de usuario y cuenta afiliada a Github</h3>
         <p>git config --global user.name "John Doe"</p>
@@ -134,7 +150,7 @@
         <br>
       </div>
 
-      <div>
+      <div id="activarConsola">
         <h2>En Visual Studio Code podemos activar la consola...</h2>
         <h3>.Abrir terminal</h3>
         <p>ctrl + ñ</p>
@@ -143,7 +159,7 @@
         <br>
       </div>
 
-      <div>
+      <div id="creacionRepo">
         <h2>Pasos en la creación de un repositorio:</h2>
         <h3>.Crear repositorio en GitHub -url-</h3>
         <h3>.Crear carpeta</h3>
@@ -157,7 +173,7 @@
         <br>
       </div>
 
-      <div>
+      <div id="pasosCommit">
         <h2>Pasos para hacer un commit</h2>
         <h3>.Se crean, modifican o eliminan archivos (Untracked files)</h3>
         <h3>.Ver cambios hechos antes de usar 'add'</h3>
@@ -204,7 +220,7 @@
         <br>
       </div>
 
-      <div>
+      <div id="gitIgnore">
         <h2>.gitignore</h2>
         <h3>La creacion de este archivo contendra informacion de datos que seran ignorados y evitara subir archivos y
           carpetas innecesarios</h3>
@@ -216,7 +232,7 @@
         <br>
       </div>
 
-      <div>
+      <div id="branches">
         <h2>Branches (Ramas)</h2>
         <img src="./img/branches.png" alt="branches">
         <h3>.Para saber en que rama estamos parados</h3>
@@ -228,7 +244,81 @@
         <p>git merge ramaNueva</p><br>
       </div>
 
-      <div>
+      <div id="flujoTrabajo">
+        <h2>Flujos de trabajo con Git</h2>
+        <h3>
+          Un flujo de trabajo de Git es una receta o recomendación sobre cómo usar Git para realizar el trabajo de
+          manera consistente y productiva.
+        </h3>
+        <h3>Git ofrece mucha flexibilidad en la forma en que los usuarios gestionan los cambios, por lo que no existe un
+          proceso estandarizado sobre cómo interactuar con Git. Al trabajar con un equipo en un proyecto administrado
+          por Git, es importante unificar la forma de trabajar para todo el equipo.
+        </h3>
+
+        <h2>
+          Flujo de trabajo creando ramas por funcionalidad
+        </h2>
+
+        <h3>Bases</h3>
+        <h4>El desarrollo de cada nueva funcionalidad se realizará en una rama dedicada en lugar de la rama maestra.
+        </h4>
+        <h4>Se solicitará a los demás desarrolladores la revisión de la nueva funcionalidad antes de integrarla.
+        </h4>
+        <h4>Una vez aceptada la nueva funcionalidad se fusionará en la rama maestra.
+        </h4>
+
+        <h3>Resumen de uso</h3>
+
+        <h4>1. Descargar la rama principal</h4>
+        <p>git checkout master</p>
+        <p>git fetch origin</p>
+        <p>git reset --hard origin/master</p>
+
+        <h4>2. Crear una rama para la nueva funcionalidad
+        </h4>
+        <p>git checkout -b nueva-funcionalidad
+        </p>
+
+        <h4>3. Modificar, añadir y confirmar
+        </h4>
+        <p>git status</p>
+        <p>git add «archivo(s)»
+        </p>
+        <p>git commit</p>
+
+        <h4>4. Subir la nueva rama al respositorio remoto
+        </h4>
+        <p>git push -u origin nueva-funcionalidad
+        </p>
+
+        <h4>5. Solicitar la revisión del código al resto del equipo
+        </h4>
+        <p>Fusionar la funcionalidad en la rama master una vez acabado el desarrollo y resuelto los conflictos
+        </p>
+
+        <h3>Ventajas</h3>
+        <ul>
+          <li>Múltiples desarrolladores pueden trabajar en una característica particular sin alterar el código de la
+            rama maestra.
+          </li>
+          <li>La rama maestra siempre contiene código probado y estable, facilitando el desarrollo en entornos de
+            integración continua.
+          </li>
+          <li>No es necesario que cada revisión de código sea completamente funcional.
+          </li>
+          <li>Se pueden solicitar revisiones del código también para pedir sugerencias en caso de bloqueo o dudas,
+            facilitando al equipo comentar y participar en el trabajo de otros.
+          </li>
+          <li>Puede usarse en otros flujos de trabajo. Por ejemplo, Git Flow y Git Forking lo usan en sus modelos de
+            ramificación.
+          </li>
+          <li>Es útil para cambios que no sean necesariamente nuevas funcionalidades; por ejemplo, para pruebas de
+            concepto o cambios en el diseño que puedan afectar a la estabilidad del código.
+          </li>
+        </ul>
+      </div>
+
+      <div id="fusionarRamas">
         <h3>.Fusionar ramas con git merge</h3>
         <h3>1. Posicionarse en la rama (Head ->)</h3>
         <p>git switch nombreRama</p>
@@ -242,7 +332,7 @@
         <br>
       </div>
 
-      <div>
+      <div id="glosario">
         <h2>Glosario Consola (comando - descripcion)</h2>
 
         <p>pwd </p>
